@@ -20,9 +20,9 @@ It's a Next.js website. All the files — the pages, the design documents, the l
 
 ## Where the site is deployed
 
-**Not connected yet.** The plan is to deploy through **Vercel**, which will publish the site automatically every time a change is pushed to GitHub. Once that's connected, the live web address will be recorded here.
+**Live at https://tcd-liard.vercel.app.** The site deploys through **Vercel**, which publishes automatically every time a change is pushed to the `main` branch on GitHub — no separate publish step. Auto-deploy is active.
 
-> *To update when done:* live URL, and a note that auto-deploy is active.
+(This is Vercel's default address. If we later connect the **thecareden.com** domain, update this line to the custom URL.)
 
 ## The documents that govern decisions
 
