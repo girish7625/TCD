@@ -91,10 +91,10 @@ export default function Home() {
 
       {/* Member quotes — three stacked Fraunces-italic testimonials, left-aligned
           in the same centered max-w-6xl container. See QUOTES TODO above. */}
-      <section className="mx-auto mt-32 flex w-full max-w-6xl flex-col gap-32 md:mt-40 md:gap-40">
+      <section className="mx-auto mt-32 grid w-full max-w-6xl grid-cols-1 gap-16 md:mt-40 md:grid-cols-3 md:gap-12">
         {QUOTES.map((quote, i) => (
-          <figure key={i} className="max-w-[40ch]">
-            <blockquote className="font-display text-[clamp(1.5rem,3vw,2rem)] italic leading-[1.4] text-body-ink">
+          <figure key={i}>
+            <blockquote className="font-display text-[clamp(1.25rem,2vw,1.5rem)] italic leading-[1.4] text-body-ink">
               {quote.text}
             </blockquote>
             <figcaption className="mt-5 text-[1.0625rem] text-body-ink">
