@@ -103,6 +103,37 @@ export default function Home() {
           </figure>
         ))}
       </section>
+
+      {/* "The rhythm of the room" — same editorial text column as "What we are". */}
+      <section className="mx-auto mt-32 w-full max-w-6xl md:mt-40">
+        <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-body-ink">
+          The rhythm of the room
+        </h2>
+
+        <div className="mt-8 flex max-w-[50ch] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
+          <p>
+            A week inside The Care Den is built around real conversation.
+            Mondays start with a support circle. Midweek offers a co-working
+            session, a walking group or gentle exercises that balance the
+            nervous system. Sundays slow down. Some weeks bring a workshop with
+            an expert in the field of care. Some weeks just hold space.
+          </p>
+          <p>
+            You can come to one session a week or all of them. You can come and
+            stay quiet. We hold room for all of it.
+          </p>
+        </div>
+
+        <a
+          href="/sessions"
+          className="mt-8 inline-block text-[1.0625rem] text-body-ink underline decoration-den-green-deep decoration-[1.5px] underline-offset-4 transition-colors hover:decoration-den-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-den-green-deep"
+        >
+          See the full week
+          <span className="ml-1 no-underline" aria-hidden="true">
+            &rarr;
+          </span>
+        </a>
+      </section>
     </main>
   );
 }
