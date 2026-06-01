@@ -1,5 +1,16 @@
 import SiteHeader from "./site-header";
 
+// TODO: Two of these three are placeholders, awaiting actual testimonials
+// from Lynn and Jacq. The real quote is repeated for now so the layout is
+// testable.
+const QUOTE_TEXT =
+  "It's a beautiful thing to be seen here, even without all the details. Y'all understand many of the big feelings in my words and the exhaustion and all of it.";
+const QUOTES = [
+  { text: QUOTE_TEXT, who: "A Care Den member" },
+  { text: QUOTE_TEXT, who: "A Care Den member" },
+  { text: QUOTE_TEXT, who: "A Care Den member" },
+];
+
 export default function Home() {
   return (
     <main className="settle flex min-h-screen flex-col px-6 py-12 sm:px-10 sm:py-14 md:px-16 md:py-16">
@@ -76,6 +87,21 @@ export default function Home() {
         <p className="mt-12 max-w-[50ch] font-display text-[clamp(1.375rem,2.5vw,1.625rem)] italic leading-[1.4] text-body-ink md:mt-14">
           You don&rsquo;t have to explain yourself here. We already get it.
         </p>
+      </section>
+
+      {/* Member quotes — three stacked Fraunces-italic testimonials, left-aligned
+          in the same centered max-w-6xl container. See QUOTES TODO above. */}
+      <section className="mx-auto mt-32 flex w-full max-w-6xl flex-col gap-32 md:mt-40 md:gap-40">
+        {QUOTES.map((quote, i) => (
+          <figure key={i} className="max-w-[40ch]">
+            <blockquote className="font-display text-[clamp(1.5rem,3vw,2rem)] italic leading-[1.4] text-body-ink">
+              {quote.text}
+            </blockquote>
+            <figcaption className="mt-5 text-[1.0625rem] text-body-ink">
+              &mdash; {quote.who}
+            </figcaption>
+          </figure>
+        ))}
       </section>
     </main>
   );
