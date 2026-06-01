@@ -22,8 +22,8 @@ export default function Home() {
 
       {/* Editorial hero: left-aligned. Single column on phone/tablet; from md up
           a two-column grid — text left, illustration slot right (hidden below md). */}
-      <section className="grid w-full max-w-6xl flex-1 content-center gap-x-12 md:grid-cols-[minmax(0,1fr)_400px] md:items-center lg:gap-x-16">
-        <div className="max-w-2xl">
+      <section className="mt-12 grid w-full max-w-6xl flex-1 content-start gap-x-12 md:mt-16 md:grid-cols-[minmax(0,40rem)_400px] md:items-start">
+        <div>
           <p className="eyebrow">A peer community for caregivers</p>
 
           <h1 className="mt-6 font-display text-[clamp(2.25rem,5.5vw,4rem)] font-normal leading-[1.05] text-body-ink">
