@@ -134,6 +134,41 @@ export default function Home() {
           </span>
         </a>
       </section>
+
+      {/* "Who built this" — same editorial text column as the sections above. */}
+      <section className="mx-auto mt-32 w-full max-w-6xl md:mt-40">
+        <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-body-ink">
+          Who built this
+        </h2>
+
+        <div className="mt-8 flex max-w-[50ch] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
+          <p>
+            The Care Den was built by Jacquelyn Revere and Lynn McGuire-Raj.
+          </p>
+          <p>
+            Jacquelyn spent six years caring for her mother and grandmother.
+            She&rsquo;s a writer with nearly one million followers on Instagram
+            as @momofmymom, the author of an upcoming book on caregiver
+            self-care, and the face people often recognize first.
+          </p>
+          <p>
+            Lynn is a clinician-in-training, a writer, and a former arts
+            producer. She brings the slower, deeper hand. The two of them met,
+            recognized something in each other, and built what they
+            couldn&rsquo;t find.
+          </p>
+        </div>
+
+        <a
+          href="/about"
+          className="mt-8 inline-block text-[1.0625rem] text-body-ink underline decoration-den-green-deep decoration-[1.5px] underline-offset-4 transition-colors hover:decoration-den-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-den-green-deep"
+        >
+          Read our full story
+          <span className="ml-1 no-underline" aria-hidden="true">
+            &rarr;
+          </span>
+        </a>
+      </section>
     </main>
   );
 }
