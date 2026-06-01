@@ -169,6 +169,54 @@ export default function Home() {
           </span>
         </a>
       </section>
+
+      <footer className="mx-auto mt-32 w-full max-w-6xl border-t border-body-ink/10 pt-10 md:mt-40">
+        <div className="grid grid-cols-1 gap-8 text-[1.0625rem] text-body-ink md:grid-cols-3 md:items-center md:gap-6">
+          <p>
+            The Care Den &middot; A room where caregivers find each other.
+          </p>
+
+          <p className="md:text-center">
+            <a
+              href="/guidelines"
+              className="underline decoration-den-green-deep/40 decoration-[1.5px] underline-offset-4 transition-colors hover:decoration-den-green-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-den-green-deep"
+            >
+              Guidelines
+            </a>
+            <span className="mx-2 text-body-ink/40" aria-hidden="true">
+              &middot;
+            </span>
+            <a
+              href="/contact"
+              className="underline decoration-den-green-deep/40 decoration-[1.5px] underline-offset-4 transition-colors hover:decoration-den-green-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-den-green-deep"
+            >
+              Contact
+            </a>
+          </p>
+
+          <p className="md:text-right">
+            <a
+              href="/privacy"
+              className="underline decoration-den-green-deep/40 decoration-[1.5px] underline-offset-4 transition-colors hover:decoration-den-green-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-den-green-deep"
+            >
+              Privacy
+            </a>
+            <span className="mx-2 text-body-ink/40" aria-hidden="true">
+              &middot;
+            </span>
+            <a
+              href="/terms"
+              className="underline decoration-den-green-deep/40 decoration-[1.5px] underline-offset-4 transition-colors hover:decoration-den-green-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-den-green-deep"
+            >
+              Terms
+            </a>
+            <span className="mx-2 text-body-ink/40" aria-hidden="true">
+              &middot;
+            </span>
+            <span>&copy; 2026 The Care Den</span>
+          </p>
+        </div>
+      </footer>
     </main>
   );
 }
