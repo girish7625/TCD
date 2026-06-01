@@ -28,13 +28,13 @@ body {
 }
 
 /* Eyebrow label — honoured but kept quiet (DESIGN.md cautions against
-   shouting): 16px floor, wide tracking, brand voice colour, not ink-heavy. */
+   shouting): 16px floor, brand voice colour, not ink-heavy. Sentence case
+   (not uppercase) per the editorial hero direction. */
 .eyebrow {
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  letter-spacing: 0.04em;
   color: var(--color-den-green-deep);
 }
 
