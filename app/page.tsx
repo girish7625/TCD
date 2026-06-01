@@ -30,16 +30,16 @@ export default function Home() {
             Where caregivers <em className="accent">find each other.</em>
           </h1>
 
-          <p className="mt-10 max-w-[50ch] text-[1.1875rem] leading-[1.6] text-body-ink">
+          <p className="mt-10 max-w-[50ch] pr-12 text-[1.1875rem] leading-[1.6] text-body-ink md:pr-0">
             A room for those carrying the emotional weight of caring for aging
             parents, partners or loved ones. A peer-led community that gets it
             without the explanation.
           </p>
 
-          <div className="mt-8 flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-7">
+          <div className="mt-8 flex items-center gap-5 sm:gap-7">
             <a
               href="https://heartbeat.com/the-care-den"
-              className="inline-flex min-h-[2.75rem] self-start items-center justify-center rounded-full bg-den-green px-5 py-2.5 sm:self-auto text-[0.875rem] font-medium text-warm-white transition-colors duration-[250ms] ease-out hover:bg-den-green-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-den-green-deep"
+              className="inline-flex min-h-[2.75rem] items-center justify-center rounded-full bg-den-green px-5 py-2.5 text-[0.875rem] font-medium text-warm-white transition-colors duration-[250ms] ease-out hover:bg-den-green-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-den-green-deep"
             >
               Become a member
             </a>
