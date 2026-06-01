@@ -32,8 +32,8 @@ body {
    (not uppercase) per the editorial hero direction. */
 .eyebrow {
   font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.1875rem;   /* 19px — confident label, not a whisper */
+  font-weight: 700;
   letter-spacing: 0.04em;
   color: var(--color-den-green-deep);
 }
