@@ -60,6 +60,38 @@ export default function Home() {
           className="hidden aspect-square w-full max-w-[400px] rounded-2xl border border-body-ink/10 bg-body-ink/[0.025] md:block"
         />
       </section>
+
+      {/* "What we are" — left-aligned editorial text column, same centered
+          max-w-6xl container as the hero. Generous space above to clear the
+          hero (often below the fold). */}
+      <section className="mx-auto mt-32 w-full max-w-6xl md:mt-40">
+        <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-body-ink">
+          What we are
+        </h2>
+
+        <div className="mt-8 flex max-w-[50ch] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
+          <p>
+            The Care Den is a peer community for mostly* women caregivers.
+            It&rsquo;s not a course or curriculum. It&rsquo;s a space to refill
+            your cup.
+          </p>
+          <p>
+            Members meet (virtually) five to six times a week to talk, sit,
+            laugh, vent, and breathe. Support circles and workshops are led by
+            peer facilitators who have been caregivers themselves or have worked
+            in care spaces and generously offered to share their wisdom. The
+            community lives quietly between sessions, in our private online
+            platform, in threads, and in small acts of care members do for each
+            other.
+          </p>
+        </div>
+
+        {/* Closing thought — set apart from the body as a Fraunces italic
+            pull-quote, echoing the hero's italic accent. */}
+        <p className="mt-12 max-w-[50ch] font-display text-[clamp(1.375rem,2.5vw,1.625rem)] italic leading-[1.4] text-body-ink md:mt-14">
+          You don&rsquo;t have to explain yourself here. We already get it.
+        </p>
+      </section>
     </main>
   );
 }
