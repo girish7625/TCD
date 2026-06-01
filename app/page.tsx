@@ -1,24 +1,9 @@
-import Image from "next/image";
+import SiteHeader from "./site-header";
 
 export default function Home() {
   return (
     <main className="settle flex min-h-screen flex-col px-6 py-12 sm:px-10 sm:py-14 md:px-16 md:py-16">
-      <header className="mx-auto w-full max-w-6xl">
-        <a
-          href="/"
-          aria-label="The Care Den — home"
-          className="inline-block rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-den-green-deep"
-        >
-          <Image
-            src="/logo.svg"
-            alt="The Care Den"
-            width={3379}
-            height={1000}
-            priority
-            className="h-auto w-[160px] sm:w-[150px]"
-          />
-        </a>
-      </header>
+      <SiteHeader />
 
       {/* Editorial hero: left-aligned. Single column on phone/tablet; from md up
           a two-column grid — text left, illustration slot right (hidden below md). */}
