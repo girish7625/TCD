@@ -22,7 +22,7 @@ export default function Home() {
 
       {/* Editorial hero: left-aligned. Single column on phone/tablet; from md up
           a two-column grid — text left, illustration slot right (hidden below md). */}
-      <section className="mt-12 grid w-full max-w-6xl flex-1 content-start gap-x-12 md:mt-16 md:grid-cols-[minmax(0,40rem)_400px] md:items-start">
+      <section className="mx-auto mt-12 grid w-full max-w-6xl flex-1 content-start gap-x-12 md:mt-16 md:grid-cols-[minmax(0,40rem)_400px] md:items-start">
         <div>
           <p className="eyebrow">A peer community for caregivers</p>
 
