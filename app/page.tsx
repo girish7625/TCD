@@ -15,7 +15,7 @@ export default function Home() {
             width={3379}
             height={1000}
             priority
-            className="h-auto w-[120px] sm:w-[150px]"
+            className="h-auto w-[160px] sm:w-[150px]"
           />
         </a>
       </header>
@@ -39,7 +39,7 @@ export default function Home() {
           <div className="mt-8 flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-7">
             <a
               href="https://heartbeat.com/the-care-den"
-              className="inline-flex min-h-[2.75rem] items-center justify-center rounded-full bg-den-green px-5 py-2.5 text-[0.875rem] font-medium text-warm-white transition-colors duration-[250ms] ease-out hover:bg-den-green-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-den-green-deep"
+              className="inline-flex min-h-[2.75rem] self-start items-center justify-center rounded-full bg-den-green px-5 py-2.5 sm:self-auto text-[0.875rem] font-medium text-warm-white transition-colors duration-[250ms] ease-out hover:bg-den-green-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-den-green-deep"
             >
               Become a member
             </a>
