@@ -151,16 +151,19 @@ export default function Home() {
               The Care Den was built by Jacquelyn Revere and Lynn McGuire-Raj.
             </p>
             <p>
-              Jacquelyn spent six years caring for her mother and grandmother.
-              She&rsquo;s a writer with nearly one million followers on
-              Instagram as @momofmymom, the author of an upcoming book on
-              caregiver self-care, and the face people often recognize first.
+              Jacquelyn Revere spent 6 years caring for her mother with
+              dementia. 19 of those months, she cared for both her mother and
+              grandmother simultaneously. She&rsquo;s built an audience of
+              nearly one million supporters across social media platforms under
+              the handle @momofmymom to tell the truth about caregiving. She has
+              written an op-ed for the LA Times&hellip;
             </p>
             <p>
-              Lynn is a clinician-in-training, a writer, and a former arts
-              producer. She brings the slower, deeper hand. The two of them met,
-              recognized something in each other, and built what they
-              couldn&rsquo;t find.
+              Lynn McGuire-Raj, MSW, LCSW-A was cared for by her parents when
+              she had cancer in her thirties. Twenty years later, she returned
+              home to care for them as they navigated heart disease and
+              dementia. A former fundraiser and festival producer turned
+              counselor&hellip;
             </p>
           </div>
 
