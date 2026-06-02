@@ -56,7 +56,7 @@ export default function Home() {
         <IllustrationSlot className="max-w-[400px]" />
       </section>
 
-      <section className="w-full bg-porch-cream-deep py-24 md:py-32">
+      <section className="mt-32 w-full bg-porch-cream-deep py-16 md:mt-40 md:py-20">
         <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:grid md:grid-cols-[minmax(0,40rem)_340px] md:items-start md:justify-between md:gap-x-12 md:px-16">
           <div>
             <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
@@ -102,7 +102,7 @@ export default function Home() {
         ))}
       </section>
 
-      <section className="w-full bg-porch-cream-deep py-24 md:py-32">
+      <section className="mt-32 w-full bg-porch-cream-deep py-16 md:mt-40 md:py-20">
         <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:grid md:grid-cols-[340px_minmax(0,34rem)] md:items-start md:justify-between md:gap-x-12 md:px-16">
           <IllustrationSlot className="max-w-[340px]" />
 
