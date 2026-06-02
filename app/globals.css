@@ -45,11 +45,7 @@ body {
    commission.) */
 .accent {
   font-style: italic;
-  text-decoration-line: underline;
-  text-decoration-color: var(--color-lamplight);
-  text-decoration-thickness: 0.09em;
-  text-underline-offset: 0.16em;
-  text-decoration-skip-ink: none;
+  color: var(--color-lamplight);
 }
 
 /* The Page Sits Down — one quiet fade-and-rise on arrival, never on scroll. */
