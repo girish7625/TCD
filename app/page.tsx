@@ -53,7 +53,7 @@ export default function Home() {
           </div>
         </div>
 
-        <IllustrationSlot className="max-w-[340px]" />
+        <IllustrationSlot className="max-w-[340px] md:mt-16" />
       </section>
 
       <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
