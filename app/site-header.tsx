@@ -32,7 +32,7 @@ export default function SiteHeader() {
   }, [menuOpen]);
 
   return (
-    <header className="mx-auto flex w-full max-w-6xl items-center justify-between">
+    <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 sm:px-10 md:px-16">
       <a
         href="/"
         aria-label="The Care Den — home"

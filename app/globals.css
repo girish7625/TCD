@@ -6,6 +6,7 @@
    back into DESIGN.md frontmatter next session. */
 @theme {
   --color-porch-cream: #f4efe6;
+  --color-porch-cream-deep: #eee6d8;
   --color-body-ink: #26211c;       /* 13.93:1 on cream — AAA */
   --color-den-green: #3a7d3f;       /* the working voice */
   --color-den-green-deep: #28552c;  /* 7.56:1 on cream — hover/press + links */
