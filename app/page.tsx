@@ -61,6 +61,9 @@ export default function Home() {
           max-w-6xl container as the hero. Generous space above to clear the
           hero (often below the fold). */}
       <section className="mx-auto mt-32 w-full max-w-6xl md:mt-40">
+        <p className="mb-3 text-[0.875rem] font-bold tracking-[0.04em] text-den-green-deep">
+          The community
+        </p>
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-body-ink">
           What we are
         </h2>
@@ -106,9 +109,13 @@ export default function Home() {
 
       {/* "The rhythm of the room" — same editorial text column as "What we are". */}
       <section className="mx-auto mt-32 w-full max-w-6xl md:mt-40">
-        <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-body-ink">
-          The rhythm of the room
-        </h2>
+        <div className="md:ml-auto md:max-w-[34rem]">
+          <p className="mb-3 text-[0.875rem] font-bold tracking-[0.04em] text-den-green-deep">
+            A typical week
+          </p>
+          <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-body-ink">
+            The rhythm of the room
+          </h2>
 
         <div className="mt-8 flex max-w-[50ch] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
           <p>
@@ -133,10 +140,14 @@ export default function Home() {
             &rarr;
           </span>
         </a>
+        </div>
       </section>
 
       {/* "Who built this" — same editorial text column as the sections above. */}
       <section className="mx-auto mt-32 w-full max-w-6xl md:mt-40">
+        <p className="mb-3 text-[0.875rem] font-bold tracking-[0.04em] text-den-green-deep">
+          The founders
+        </p>
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-body-ink">
           Who built this
         </h2>
