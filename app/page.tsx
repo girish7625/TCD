@@ -104,6 +104,47 @@ export default function Home() {
         ))}
       </section>
 
+      {/* TEMPORARY — font preview for Lynn & Jacq. Compares serif options in
+          context. Remove this whole section (and the extra fonts in layout.tsx)
+          once a serif is chosen. */}
+      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
+        <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
+          Font preview
+        </h2>
+        <p className="mt-4 max-w-[55ch] text-[1.0625rem] leading-[1.6] text-body-ink/70">
+          A temporary section to compare serif options. Same headline and member
+          quote in each font. Only the display serif changes&mdash;the body text
+          you&rsquo;re reading stays as it is.
+        </p>
+
+        <div className="mt-10 flex flex-col gap-10">
+          {[
+            { name: "Fraunces (current)", varName: "--font-fraunces", weight: 400 },
+            { name: "Cormorant Garamond", varName: "--font-cormorant", weight: 500 },
+            { name: "Lora", varName: "--font-lora", weight: 400 },
+            { name: "Newsreader", varName: "--font-newsreader", weight: 400 },
+          ].map((f) => (
+            <div key={f.name} className="border-t border-body-ink/10 pt-8">
+              <p className="text-[0.8125rem] font-bold tracking-[0.12em] text-body-ink/50">
+                {f.name.toUpperCase()}
+              </p>
+              <p
+                className="mt-5 text-[clamp(1.75rem,4vw,2.75rem)] leading-[1.1] text-body-ink"
+                style={{ fontFamily: `var(${f.varName})`, fontWeight: f.weight }}
+              >
+                Where caregivers <em className="accent">find</em> each other.
+              </p>
+              <p
+                className="mt-5 max-w-[55ch] text-[1.375rem] italic leading-[1.45] text-body-ink"
+                style={{ fontFamily: `var(${f.varName})` }}
+              >
+                {QUOTE_TEXT}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
         <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:grid md:grid-cols-[340px_minmax(0,34rem)] md:items-start md:justify-between md:gap-x-12 md:px-16">
           <IllustrationSlot className="max-w-[340px] md:mt-20" />

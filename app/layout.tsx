@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Hanken_Grotesk } from "next/font/google";
+import { Fraunces, Hanken_Grotesk, Cormorant_Garamond, Lora, Newsreader } from "next/font/google";
 import "./globals.css";
 
 // Display serif — old-style warmth that echoes the wordmark. Normal + italic
@@ -16,6 +16,25 @@ const hanken = Hanken_Grotesk({
   subsets: ["latin"],
 });
 
+// TEMPORARY — serif candidates for the font preview section. Remove the two
+// that aren't chosen (and this comment) once Lynn & Jacq decide.
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  style: ["normal", "italic"],
+});
+const lora = Lora({
+  variable: "--font-lora",
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+});
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+});
+
 export const metadata: Metadata = {
   title: "The Care Den — A peer community for caregivers",
   description:
@@ -30,7 +49,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${hanken.variable} antialiased`}
+      className={`${fraunces.variable} ${hanken.variable} ${cormorant.variable} ${lora.variable} ${newsreader.variable} antialiased`}
     >
       <body>{children}</body>
     </html>
