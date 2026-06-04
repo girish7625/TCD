@@ -27,6 +27,18 @@ const PRINCIPLES = [
   },
 ];
 
+function principleCell(i: number) {
+  return [
+    "py-8",
+    i > 0 ? "border-t border-body-ink/10" : "",
+    i === 1 ? "md:border-t-0" : "",
+    i >= 2 ? "md:border-t md:border-body-ink/10" : "",
+    i % 2 === 1
+      ? "md:border-l md:border-body-ink/10 md:pl-12"
+      : "md:pr-12",
+  ].join(" ");
+}
+
 export default function About() {
   return (
     <main className="settle flex min-h-screen flex-col py-12 sm:py-14 md:py-16">
@@ -46,11 +58,11 @@ export default function About() {
         />
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-2xl px-6 sm:px-10 md:mt-28">
+      <section className="mx-auto mt-24 w-full max-w-4xl px-6 sm:px-10 md:mt-28 md:px-16">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           Why we exist
         </h2>
-        <div className="mt-8 flex flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
+        <div className="mt-8 flex max-w-[46rem] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
           <p>
             More than 53 million Americans are caregivers. Most of them are
             women. Many of them are caring for someone they love with dementia,
@@ -75,13 +87,13 @@ export default function About() {
           <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
             Who built this
           </h2>
-          <div className="mt-10 grid gap-x-12 gap-y-10 md:grid-cols-2">
+          <div className="mt-10 grid gap-x-12 gap-y-14 md:grid-cols-2 md:gap-x-20">
             <div>
               <div
                 aria-hidden="true"
                 className="aspect-[4/5] w-full max-w-[320px] rounded-2xl border border-body-ink/10 bg-body-ink/[0.03]"
               />
-              <p className="mt-6 text-[1.1875rem] leading-[1.6] text-body-ink">
+              <p className="mt-7 text-[1.1875rem] leading-[1.6] text-body-ink">
                 <strong className="font-semibold">Jacquelyn Revere</strong>{" "}
                 spent 6 years caring for her mother with dementia. 19 of those
                 months, she cared for both her mother and grandmother
@@ -98,7 +110,7 @@ export default function About() {
                 aria-hidden="true"
                 className="aspect-[4/5] w-full max-w-[320px] rounded-2xl border border-body-ink/10 bg-body-ink/[0.03]"
               />
-              <p className="mt-6 text-[1.1875rem] leading-[1.6] text-body-ink">
+              <p className="mt-7 text-[1.1875rem] leading-[1.6] text-body-ink">
                 <strong className="font-semibold">
                   Lynn McGuire-Raj, MSW, LCSW-A
                 </strong>{" "}
@@ -112,7 +124,7 @@ export default function About() {
               </p>
             </div>
           </div>
-          <p className="mt-10 max-w-[55ch] text-[1.1875rem] leading-[1.6] text-body-ink">
+          <p className="mx-auto mt-14 max-w-[42ch] text-center text-[1.1875rem] leading-[1.6] text-body-ink">
             The two of them met, recognized something in each other, and built
             what they couldn&rsquo;t find.
           </p>
@@ -123,12 +135,12 @@ export default function About() {
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           What we stand for
         </h2>
-        <p className="mt-6 max-w-[55ch] text-[1.1875rem] leading-[1.6] text-body-ink">
+        <p className="mt-6 max-w-[46rem] text-[1.1875rem] leading-[1.6] text-body-ink">
           Four things, written down so we can hold ourselves to them:
         </p>
-        <div className="mt-10 grid gap-x-12 gap-y-10 md:grid-cols-2">
-          {PRINCIPLES.map((p) => (
-            <div key={p.lead}>
+        <div className="mt-8 grid md:grid-cols-2">
+          {PRINCIPLES.map((p, i) => (
+            <div key={p.lead} className={principleCell(i)}>
               <p className="text-[1.1875rem] font-semibold leading-[1.4] text-body-ink">
                 {p.lead}
               </p>
@@ -141,11 +153,11 @@ export default function About() {
       </section>
 
       <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
-        <div className="mx-auto w-full max-w-2xl px-6 sm:px-10">
+        <div className="mx-auto w-full max-w-4xl px-6 sm:px-10 md:px-16">
           <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
             What we are not
           </h2>
-          <div className="mt-8 flex flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
+          <div className="mt-8 flex max-w-[46rem] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
             <p>
               We are a supportive group, but we are not solely a
               &ldquo;support group&rdquo;. We are not therapy, we do not diagnose
@@ -161,11 +173,11 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-2xl px-6 sm:px-10 md:mt-28">
+      <section className="mx-auto mt-24 w-full max-w-4xl px-6 sm:px-10 md:mt-28 md:px-16">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           What we&rsquo;re building toward
         </h2>
-        <div className="mt-8 flex flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
+        <div className="mt-8 flex max-w-[46rem] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
           <p>
             The community is the center of everything. Around it, we are slowly
             building tools that make the den a richer experience: courses on
@@ -176,7 +188,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-2xl px-6 sm:px-10 md:mt-28">
+      <section className="mx-auto mt-24 w-full max-w-4xl px-6 sm:px-10 md:mt-28 md:px-16">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           Want to come in?
         </h2>
