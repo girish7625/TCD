@@ -46,11 +46,11 @@ export default function About() {
         />
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
+      <section className="mx-auto mt-24 w-full max-w-2xl px-6 sm:px-10 md:mt-28">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           Why we exist
         </h2>
-        <div className="mt-8 flex max-w-[55ch] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
+        <div className="mt-8 flex flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
           <p>
             More than 53 million Americans are caregivers. Most of them are
             women. Many of them are caring for someone they love with dementia,
@@ -71,48 +71,64 @@ export default function About() {
       </section>
 
       <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
-        <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:px-16">
+        <div className="mx-auto w-full max-w-4xl px-6 sm:px-10 md:px-16">
           <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
             Who built this
           </h2>
-          <div className="mt-8 flex max-w-[58ch] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
-            <p>
-              Jacquelyn Revere spent 6 years caring for her mother with
-              dementia. 19 of those months, she cared for both her mother and
-              grandmother simultaneously. She&rsquo;s built an audience of
-              nearly one million supporters across social media platforms under
-              the handle @momofmymom to tell the truth about caregiving. She has
-              written an op-ed for the LA Times, been featured by NPR, has
-              partnered with AARP and is the author of two upcoming books on
-              dementia caregiving and self-care for caregivers.
-            </p>
-            <p>
-              Lynn McGuire-Raj, MSW, LCSW-A was cared for by her parents when
-              she had cancer in her thirties. Twenty years later, she returned
-              home to care for them as they navigated heart disease and
-              dementia. A former fundraiser and festival producer turned
-              counselor, Lynn brings her graduate work and community building
-              skills to The Care Den. A budding clinician, she works with
-              clients navigating transitions, grief and loss in North Carolina.
-            </p>
-            <p>
-              The two of them met, recognized something in each other, and built
-              what they couldn&rsquo;t find.
-            </p>
+          <div className="mt-10 grid gap-x-12 gap-y-10 md:grid-cols-2">
+            <div>
+              <div
+                aria-hidden="true"
+                className="aspect-[4/5] w-full max-w-[320px] rounded-2xl border border-body-ink/10 bg-body-ink/[0.03]"
+              />
+              <p className="mt-6 text-[1.1875rem] leading-[1.6] text-body-ink">
+                <strong className="font-semibold">Jacquelyn Revere</strong>{" "}
+                spent 6 years caring for her mother with dementia. 19 of those
+                months, she cared for both her mother and grandmother
+                simultaneously. She&rsquo;s built an audience of nearly one
+                million supporters across social media platforms under the
+                handle @momofmymom to tell the truth about caregiving. She has
+                written an op-ed for the LA Times, been featured by NPR, has
+                partnered with AARP and is the author of two upcoming books on
+                dementia caregiving and self-care for caregivers.
+              </p>
+            </div>
+            <div>
+              <div
+                aria-hidden="true"
+                className="aspect-[4/5] w-full max-w-[320px] rounded-2xl border border-body-ink/10 bg-body-ink/[0.03]"
+              />
+              <p className="mt-6 text-[1.1875rem] leading-[1.6] text-body-ink">
+                <strong className="font-semibold">
+                  Lynn McGuire-Raj, MSW, LCSW-A
+                </strong>{" "}
+                was cared for by her parents when she had cancer in her
+                thirties. Twenty years later, she returned home to care for them
+                as they navigated heart disease and dementia. A former
+                fundraiser and festival producer turned counselor, Lynn brings
+                her graduate work and community building skills to The Care Den.
+                A budding clinician, she works with clients navigating
+                transitions, grief and loss in North Carolina.
+              </p>
+            </div>
           </div>
+          <p className="mt-10 max-w-[55ch] text-[1.1875rem] leading-[1.6] text-body-ink">
+            The two of them met, recognized something in each other, and built
+            what they couldn&rsquo;t find.
+          </p>
         </div>
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
+      <section className="mx-auto mt-24 w-full max-w-4xl px-6 sm:px-10 md:mt-28 md:px-16">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           What we stand for
         </h2>
         <p className="mt-6 max-w-[55ch] text-[1.1875rem] leading-[1.6] text-body-ink">
           Four things, written down so we can hold ourselves to them:
         </p>
-        <div className="mt-10 flex flex-col gap-9">
+        <div className="mt-10 grid gap-x-12 gap-y-10 md:grid-cols-2">
           {PRINCIPLES.map((p) => (
-            <div key={p.lead} className="max-w-[55ch]">
+            <div key={p.lead}>
               <p className="text-[1.1875rem] font-semibold leading-[1.4] text-body-ink">
                 {p.lead}
               </p>
@@ -125,11 +141,11 @@ export default function About() {
       </section>
 
       <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
-        <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:px-16">
+        <div className="mx-auto w-full max-w-2xl px-6 sm:px-10">
           <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
             What we are not
           </h2>
-          <div className="mt-8 flex max-w-[55ch] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
+          <div className="mt-8 flex flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
             <p>
               We are a supportive group, but we are not solely a
               &ldquo;support group&rdquo;. We are not therapy, we do not diagnose
@@ -145,11 +161,11 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
+      <section className="mx-auto mt-24 w-full max-w-2xl px-6 sm:px-10 md:mt-28">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           What we&rsquo;re building toward
         </h2>
-        <div className="mt-8 flex max-w-[55ch] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
+        <div className="mt-8 flex flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
           <p>
             The community is the center of everything. Around it, we are slowly
             building tools that make the den a richer experience: courses on
@@ -160,7 +176,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
+      <section className="mx-auto mt-24 w-full max-w-2xl px-6 sm:px-10 md:mt-28">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           Want to come in?
         </h2>
