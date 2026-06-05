@@ -34,8 +34,8 @@ function principleCell(i: number) {
     i === 1 ? "md:border-t-0" : "",
     i >= 2 ? "md:border-t md:border-body-ink/10" : "",
     i % 2 === 1
-      ? "md:border-l md:border-body-ink/10 md:pl-12"
-      : "md:pr-12",
+      ? "md:border-l md:border-body-ink/10 md:pl-16"
+      : "md:pr-16",
   ].join(" ");
 }
 
@@ -58,11 +58,11 @@ export default function About() {
         />
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-4xl px-6 sm:px-10 md:mt-28 md:px-16">
+      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           Why we exist
         </h2>
-        <div className="mt-8 flex max-w-[46rem] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
+        <div className="mt-8 flex max-w-[48rem] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
           <p>
             More than 53 million Americans are caregivers. Most of them are
             women. Many of them are caring for someone they love with dementia,
@@ -83,12 +83,12 @@ export default function About() {
       </section>
 
       <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
-        <div className="mx-auto w-full max-w-4xl px-6 sm:px-10 md:px-16">
+        <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:px-16">
           <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
             Who built this
           </h2>
-          <div className="mt-10 grid gap-x-12 gap-y-14 md:grid-cols-2 md:gap-x-20">
-            <div>
+          <div className="mt-10 grid gap-x-12 gap-y-14 md:grid-cols-2">
+            <div className="md:max-w-[26rem]">
               <div
                 aria-hidden="true"
                 className="aspect-[4/5] w-full max-w-[320px] rounded-2xl border border-body-ink/10 bg-body-ink/[0.03]"
@@ -105,7 +105,7 @@ export default function About() {
                 dementia caregiving and self-care for caregivers.
               </p>
             </div>
-            <div>
+            <div className="md:ml-auto md:max-w-[26rem]">
               <div
                 aria-hidden="true"
                 className="aspect-[4/5] w-full max-w-[320px] rounded-2xl border border-body-ink/10 bg-body-ink/[0.03]"
@@ -131,11 +131,11 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-4xl px-6 sm:px-10 md:mt-28 md:px-16">
+      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           What we stand for
         </h2>
-        <p className="mt-6 max-w-[46rem] text-[1.1875rem] leading-[1.6] text-body-ink">
+        <p className="mt-6 max-w-[48rem] text-[1.1875rem] leading-[1.6] text-body-ink">
           Four things, written down so we can hold ourselves to them:
         </p>
         <div className="mt-8 grid md:grid-cols-2">
@@ -153,11 +153,11 @@ export default function About() {
       </section>
 
       <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
-        <div className="mx-auto w-full max-w-4xl px-6 sm:px-10 md:px-16">
+        <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:px-16">
           <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
             What we are not
           </h2>
-          <div className="mt-8 flex max-w-[46rem] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
+          <div className="mt-8 flex max-w-[48rem] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
             <p>
               We are a supportive group, but we are not solely a
               &ldquo;support group&rdquo;. We are not therapy, we do not diagnose
@@ -173,11 +173,11 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-4xl px-6 sm:px-10 md:mt-28 md:px-16">
+      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           What we&rsquo;re building toward
         </h2>
-        <div className="mt-8 flex max-w-[46rem] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
+        <div className="mt-8 flex max-w-[48rem] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
           <p>
             The community is the center of everything. Around it, we are slowly
             building tools that make the den a richer experience: courses on
@@ -188,7 +188,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-4xl px-6 sm:px-10 md:mt-28 md:px-16">
+      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           Want to come in?
         </h2>
