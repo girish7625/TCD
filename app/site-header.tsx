@@ -7,6 +7,7 @@ const NAV_LINKS = [
   { label: "Join", href: "/join" },
   { label: "About", href: "/about" },
   { label: "Essays", href: "/essays" },
+  { label: "Partners", href: "/partners" },
   { label: "Sign in", href: "https://heartbeat.com/the-care-den" },
 ];
 
