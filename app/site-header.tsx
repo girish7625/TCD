@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const NAV_LINKS = [
-  { label: "Join", href: "https://heartbeat.com/the-care-den" },
+  { label: "Join", href: "/join" },
   { label: "About", href: "/about" },
   { label: "Essays", href: "/essays" },
   { label: "Sign in", href: "https://heartbeat.com/the-care-den" },
