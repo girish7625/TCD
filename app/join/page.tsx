@@ -57,13 +57,24 @@ const INCLUDED = [
   "Access to facilitator office hours.",
 ];
 
-// PLACEHOLDER facilitators — awaiting real names, bios, photos, and consent
-// from Lynn & Jacquelyn. Structure repeats, so the grid grows as people are added.
-const FACILITATORS = [
-  { name: "Facilitator name", bio: "A line about their caregiving background." },
-  { name: "Facilitator name", bio: "A line about their caregiving background." },
-  { name: "Facilitator name", bio: "A line about their caregiving background." },
+// Facilitators — working bios in Lynn's words until she finalizes; Nikki's is
+// pending (a blank oneLine renders the muted "Bio coming soon."). Each entry is
+// { name, oneLine, photo? }; initials() derives the avatar fallback from the
+// name, and a photo added later drops into the same circle with no layout shift.
+const FACILITATORS: { name: string; oneLine: string; photo?: string }[] = [
+  { name: "Andrea Hughes", oneLine: "Caring for her mom with Alzheimer's." },
+  { name: "Lynn McGuire Raj", oneLine: "Cared for her mom through heart disease and her dad through dementia. Then went to school for it." },
+  { name: "Nikki Nurse", oneLine: "" },
+  { name: "Jacquelyn Revere", oneLine: "Turned a seven-year journey caring for her grandmother and mom into this work." },
 ];
+
+// derive initials from the name so the avatar placeholder needs no upkeep
+function initials(name: string) {
+  const parts = name.trim().split(/\s+/).filter(Boolean);
+  if (parts.length === 0) return "";
+  if (parts.length === 1) return parts[0][0].toUpperCase();
+  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+}
 
 export default function Join() {
   return (
@@ -130,19 +141,32 @@ export default function Join() {
           done the caregiving or worked in the care space. Meet a few on the
           crew…
         </p>
-        <div className="mt-10 grid gap-x-10 gap-y-12 sm:grid-cols-2 md:grid-cols-3">
-          {FACILITATORS.map((f, i) => (
-            <div key={i}>
-              <div
-                aria-hidden="true"
-                className="aspect-[4/5] w-full max-w-[280px] rounded-2xl border border-body-ink/10 bg-body-ink/[0.03]"
-              />
-              <p className="mt-5 text-[1.1875rem] font-semibold leading-[1.4] text-body-ink">
+        <div className="mt-10 flex flex-wrap gap-x-10 gap-y-10">
+          {FACILITATORS.map((f) => (
+            <div key={f.name} className="w-[13rem]">
+              <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-den-green/10 text-[1.0625rem] font-semibold text-den-green-deep">
+                {f.photo ? (
+                  <img
+                    src={f.photo}
+                    alt={f.name}
+                    className="h-full w-full object-cover"
+                  />
+                ) : (
+                  <span aria-hidden="true">{initials(f.name)}</span>
+                )}
+              </div>
+              <p className="mt-3 font-display text-[1.1875rem] leading-[1.3] text-den-green-deep">
                 {f.name}
               </p>
-              <p className="mt-1 text-[1.1875rem] leading-[1.6] text-body-ink">
-                {f.bio}
-              </p>
+              {f.oneLine ? (
+                <p className="mt-1 text-[1.0625rem] leading-[1.5] text-body-ink/80">
+                  {f.oneLine}
+                </p>
+              ) : (
+                <p className="mt-1 text-[1.0625rem] italic leading-[1.5] text-body-ink/50">
+                  Bio coming soon.
+                </p>
+              )}
             </div>
           ))}
         </div>

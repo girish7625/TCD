@@ -1,12 +1,19 @@
 import SiteHeader from "./site-header";
 import SiteFooter from "./site-footer";
 
-const QUOTE_TEXT =
-  "It's a beautiful thing to be seen here, even without all the details. Y'all understand many of the big feelings in my words and the exhaustion and all of it.";
 const QUOTES = [
-  { text: QUOTE_TEXT, who: "A Care Den member" },
-  { text: QUOTE_TEXT, who: "A Care Den member" },
-  { text: QUOTE_TEXT, who: "A Care Den member" },
+  {
+    text: "At first I was nervous about joining but then I thought, what is there to lose? I wasn't looking for a support group. This is exactly what I wanted, overall wellness for caregivers. I can tell how intentional you have been curating the sessions and the facilitators and I'm so grateful to be here. The Care Den is an answered prayer.",
+    who: "K.B.",
+  },
+  {
+    text: "I am filled with gratitude to be surrounded in this space with others who can provide the upspiral levity and comfort in times of need.",
+    who: "C.O.",
+  },
+  {
+    text: "The Care Den is a rare place where people you've never and will probably never meet will lift you up and you get to lift others because you've worn their shoes. If you are in doubt, join because it's a place like no other.",
+    who: "E.B.",
+  },
 ];
 
 function IllustrationSlot({ className = "" }: { className?: string }) {
