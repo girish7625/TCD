@@ -20,14 +20,20 @@ export default function SiteFooter() {
         </p>
 
         <p className="md:text-right">
-          <a href="/privacy" className={footerLink}>
+          <a href="/legal#privacy" className={footerLink}>
             Privacy
           </a>
           <span className="mx-2 text-body-ink/40" aria-hidden="true">
             &middot;
           </span>
-          <a href="/terms" className={footerLink}>
+          <a href="/legal#terms" className={footerLink}>
             Terms
+          </a>
+          <span className="mx-2 text-body-ink/40" aria-hidden="true">
+            &middot;
+          </span>
+          <a href="/legal#disclaimer" className={footerLink}>
+            Disclaimer
           </a>
           <span className="mx-2 text-body-ink/40" aria-hidden="true">
             &middot;

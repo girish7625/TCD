@@ -20,7 +20,7 @@ const WEEK = [
   {
     day: "Tuesday",
     title: "Self-Care Practice",
-    body: "Time set aside, to tend to you. Together. Bring your journal, your knitting or your nail polish.",
+    body: "Time set aside, to tend to you. Together. Bring your journal, your craft project or your nail polish.",
   },
   {
     day: "Wednesday",
@@ -44,8 +44,8 @@ const WEEK = [
   },
   {
     day: "Sunday",
-    title: "Open thread",
-    body: "No live session. The community thread is open. Members check in with each other.",
+    title: "Grief & Loss",
+    body: "An hour to honor ambiguous losses, anticipatory grief and the grief that comes after death.",
   },
 ];
 
@@ -77,8 +77,9 @@ export default function Join() {
         </h1>
         <p className="mt-8 max-w-[48rem] text-[1.1875rem] leading-[1.6] text-body-ink">
           The Care Den is a membership community for those caring for aging
-          parents, partners, and loved ones. As low as $20 a month. No contract.
-          Leave anytime.
+          parents, partners, and loved ones. As low as $20 a month. Tiered
+          pricing offers pay-what-you-can to pay-it-forward options. No
+          contract. Leave anytime.
         </p>
         <div className="mt-9">
           <a href="https://heartbeat.com/the-care-den" className={ctaClass}>
@@ -125,8 +126,9 @@ export default function Join() {
           Who holds the room
         </h2>
         <p className="mt-6 max-w-[48rem] text-[1.1875rem] leading-[1.6] text-body-ink">
-          Every session is held by a peer facilitator, someone who has done the
-          caregiving too.
+          Every session is held by a peer facilitator, someone who has either
+          done the caregiving or worked in the care space. Meet a few on the
+          crew…
         </p>
         <div className="mt-10 grid gap-x-10 gap-y-12 sm:grid-cols-2 md:grid-cols-3">
           {FACILITATORS.map((f, i) => (
@@ -170,7 +172,8 @@ export default function Join() {
         </h2>
         <p className="mt-8 max-w-[48rem] text-[1.1875rem] leading-[1.6] text-body-ink">
           Memberships start at $20 a month, with $35 and $50 tiers for those who
-          can give more. We keep this simple on purpose. If $20 a month is hard
+          can give more and want to ensure facilitators receive fair
+          compensation. We keep this simple on purpose. If $20 a month is hard
           right now, write to us. We have a small number of complimentary
           memberships and we&rsquo;d rather have you in the room.
         </p>

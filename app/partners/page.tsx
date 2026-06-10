@@ -163,10 +163,6 @@ export default function Partners() {
             </p>
             <p>
               Write to us at{" "}
-              <a href="mailto:partners@thecareden.com" className={linkClass}>
-                partners@thecareden.com
-              </a>{" "}
-              or{" "}
               <a href="mailto:hello@thecareden.com" className={linkClass}>
                 hello@thecareden.com
               </a>
@@ -178,7 +174,7 @@ export default function Partners() {
             make sure they don&rsquo;t.
           </p>
           <div className="mt-8">
-            <a href="mailto:partners@thecareden.com" className={ctaClass}>
+            <a href="mailto:hello@thecareden.com" className={ctaClass}>
               Get in touch
             </a>
           </div>

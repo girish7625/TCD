@@ -14,7 +14,7 @@ const linkClass =
 const FAQ = [
   {
     q: "What is The Care Den?",
-    a: "The Care Den is a peer-led membership community for women caregivers. Members meet five to seven times a week in facilitated sessions and connect between sessions through our private community platform.",
+    a: "The Care Den is a peer-led membership community for caregivers of persons living with dementia, terminal or chronic illness or severe disability. Members meet in facilitated virtual sessions hosted five to seven times a week and connect between sessions through our private community platform.",
   },
   {
     q: "Who is The Care Den for?",
@@ -22,7 +22,7 @@ const FAQ = [
   },
   {
     q: "How much does membership cost?",
-    a: "Membership is $20 a month. No contract, no tiers, no upsells. You can cancel anytime.",
+    a: "Membership starts at $20 a month for full community access. You can pay-it-forward at the $35 or $50 levels per month if you feel inclined and have the means to help subsidize others or sustainably compensate our facilitators. No contract. You can cancel anytime.",
   },
   {
     q: "What if I can’t afford $20 a month?",
@@ -133,7 +133,7 @@ export default function Guidelines() {
 
       <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
-          What members often ask
+          Frequently Asked Questions
         </h2>
         <div className="mt-8 max-w-[48rem]">
           {FAQ.map((item) => (

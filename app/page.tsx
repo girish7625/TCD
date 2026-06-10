@@ -67,16 +67,16 @@ export default function Home() {
 
               <div className="mt-8 flex max-w-[50ch] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
                 <p>
-                  The Care Den is a peer community for mostly* women caregivers.
-                  It&rsquo;s not a course or curriculum. It&rsquo;s a space to
-                  refill your cup.
+                  The Care Den is a peer community for caregivers. It&rsquo;s
+                  not a course or curriculum but rather, a space to refill
+                  your cup.
                 </p>
                 <p>
-                  Members meet (virtually) five to six times a week to talk,
+                  Members gather (virtually) five to six times a week to talk,
                   sit, laugh, vent, and breathe. Support circles and workshops
                   are led by peer facilitators who have been caregivers
                   themselves or have worked in care spaces and generously
-                  offered to share their wisdom. The community lives quietly
+                  offer to share their wisdom. The community lives quietly
                   between sessions, in our private online platform, in threads,
                   and in small acts of care members do for each other.
                 </p>
@@ -117,14 +117,13 @@ export default function Home() {
             <div className="mt-8 flex max-w-[50ch] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
               <p>
                 A week inside The Care Den is built around real conversation.
-                Mondays start with a support circle. Midweek offers a co-working
-                session, a walking group or gentle exercises that balance the
-                nervous system. Sundays slow down. Some weeks bring a workshop
-                with an expert in the field of care. Some weeks just hold space.
-              </p>
-              <p>
-                You can come to one session a week or all of them. You can come
-                and stay quiet. We hold room for all of it.
+                Mondays start with a support circle. Midweek offers guided
+                exercises to calm and balance the nervous system. Friday night
+                hangs are for socializing. And Sundays slow down with sessions
+                that honor grief that hasn&rsquo;t yet been named. Some weeks
+                feature an expert in the field of care. Some weeks just hold
+                space. Come to one session a week or all of them. You are
+                welcome to engage or stay quiet. We hold room for all of it.
               </p>
             </div>
 
