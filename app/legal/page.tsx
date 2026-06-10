@@ -507,7 +507,7 @@ const DISCLAIMER_BODY = (
 );
 
 const SECTIONS = [
-  { id: "privacy", title: "Privacy Policy", open: true, body: PRIVACY_BODY },
+  { id: "privacy", title: "Privacy Policy", open: false, body: PRIVACY_BODY },
   { id: "terms", title: "Terms & Conditions", open: false, body: TERMS_BODY },
   { id: "disclaimer", title: "Website Disclaimer", open: false, body: DISCLAIMER_BODY },
 ];
