@@ -177,19 +177,28 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
-        <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
-          What we&rsquo;re building toward
-        </h2>
-        <div className="mt-8 flex max-w-[48rem] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
-          <p>
-            The community is the center of everything. Around it, we are slowly
-            building tools that make the den a richer experience: courses on
-            building resilience, promoting practices of self-care, and essays
-            and reflections from members and facilitators.
-          </p>
-          <p>All of it to support happier, healthier and stronger caregivers.</p>
+      <section className="mx-auto mt-24 grid w-full max-w-6xl content-start gap-x-12 px-6 sm:px-10 md:mt-28 md:grid-cols-[minmax(0,40rem)_300px] md:items-center md:justify-between md:px-16">
+        <div>
+          <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
+            What we&rsquo;re building toward
+          </h2>
+          <div className="mt-8 flex max-w-[48rem] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
+            <p>
+              The community is the center of everything. Around it, we are slowly
+              building tools that make the den a richer experience: courses on
+              building resilience, promoting practices of self-care, and essays
+              and reflections from members and facilitators.
+            </p>
+            <p>All of it to support happier, healthier and stronger caregivers.</p>
+          </div>
         </div>
+        <Image
+          src="/illustrations/heart.png"
+          alt="A watercolor illustration of a heart held in a pair of arms."
+          width={300}
+          height={300}
+          className="hidden h-auto w-full max-w-[300px] md:block"
+        />
       </section>
 
       <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">

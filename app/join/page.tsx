@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import SiteHeader from "../site-header";
 import SiteFooter from "../site-footer";
@@ -81,22 +82,31 @@ export default function Join() {
     <main className="settle flex min-h-screen flex-col py-12 sm:py-14 md:py-16">
       <SiteHeader />
 
-      <section className="mx-auto mt-12 w-full max-w-6xl px-6 sm:px-10 md:mt-16 md:px-16">
-        <p className="eyebrow">Membership</p>
-        <h1 className="mt-8 font-display text-[clamp(2.25rem,5.5vw,4rem)] font-normal leading-[1.05] text-body-ink">
-          Pull up a chair.
-        </h1>
-        <p className="mt-8 max-w-[48rem] text-[1.1875rem] leading-[1.6] text-body-ink">
-          The Care Den is a membership community for those caring for aging
-          parents, partners, and loved ones. As low as $20 a month. Tiered
-          pricing offers pay-what-you-can to pay-it-forward options. No
-          contract. Leave anytime.
-        </p>
-        <div className="mt-9">
-          <a href="https://heartbeat.com/the-care-den" className={ctaClass}>
-            Join now
-          </a>
+      <section className="mx-auto mt-12 grid w-full max-w-6xl content-start gap-x-12 px-6 sm:px-10 md:mt-16 md:grid-cols-[minmax(0,40rem)_340px] md:items-center md:justify-between md:px-16">
+        <div>
+          <p className="eyebrow">Membership</p>
+          <h1 className="mt-8 font-display text-[clamp(2.25rem,5.5vw,4rem)] font-normal leading-[1.05] text-body-ink">
+            Pull up a chair.
+          </h1>
+          <p className="mt-8 max-w-[48rem] text-[1.1875rem] leading-[1.6] text-body-ink">
+            The Care Den is a membership community for those caring for aging
+            parents, partners, and loved ones. As low as $20 a month. Tiered
+            pricing offers pay-what-you-can to pay-it-forward options. No
+            contract. Leave anytime.
+          </p>
+          <div className="mt-9">
+            <a href="https://heartbeat.com/the-care-den" className={ctaClass}>
+              Join now
+            </a>
+          </div>
         </div>
+        <Image
+          src="/illustrations/chair.png"
+          alt="A watercolor illustration of a cozy armchair with a blanket and a plant."
+          width={340}
+          height={340}
+          className="hidden h-auto w-full max-w-[340px] md:block"
+        />
       </section>
 
       <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">

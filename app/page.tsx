@@ -127,7 +127,13 @@ export default function Home() {
 
       <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
         <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:grid md:grid-cols-[340px_minmax(0,34rem)] md:items-start md:justify-between md:gap-x-12 md:px-16">
-          <IllustrationSlot className="max-w-[340px] md:mt-20" />
+          <Image
+            src="/illustrations/rhythm.png"
+            alt="A watercolor illustration of an open planner with a coffee cup, glasses, pens, and plants."
+            width={340}
+            height={340}
+            className="hidden h-auto w-full max-w-[340px] md:mt-20 md:block"
+          />
 
           <div>
             <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">

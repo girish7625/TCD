@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import SiteHeader from "../site-header";
 import SiteFooter from "../site-footer";
@@ -39,21 +40,30 @@ export default function Partners() {
     <main className="settle flex min-h-screen flex-col py-12 sm:py-14 md:py-16">
       <SiteHeader />
 
-      <section className="mx-auto mt-12 w-full max-w-6xl px-6 sm:px-10 md:mt-16 md:px-16">
-        <p className="eyebrow">Partners</p>
-        <h1 className="mt-8 max-w-[18ch] font-display text-[clamp(2.25rem,5.5vw,4rem)] font-normal leading-[1.05] text-body-ink">
-          A room for the caregivers your patients go home to.
-        </h1>
-        <p className="mt-8 max-w-[48rem] text-[1.1875rem] leading-[1.6] text-body-ink">
-          The Care Den is a peer community for family caregivers navigating the
-          long haul of caring for aging parents, spouses, partners, or loved
-          ones. We hold the human being behind the caregiving role. Five to six
-          sessions a week. A real community. Steady support between the
-          appointments.
-        </p>
-        <p className={`mt-8 ${emphasisGreen}`}>
-          We believe caregivers deserve care too.
-        </p>
+      <section className="mx-auto mt-12 grid w-full max-w-6xl content-start gap-x-12 px-6 sm:px-10 md:mt-16 md:grid-cols-[minmax(0,40rem)_340px] md:items-center md:justify-between md:px-16">
+        <div>
+          <p className="eyebrow">Partners</p>
+          <h1 className="mt-8 max-w-[18ch] font-display text-[clamp(2.25rem,5.5vw,4rem)] font-normal leading-[1.05] text-body-ink">
+            A room for the caregivers your patients go home to.
+          </h1>
+          <p className="mt-8 max-w-[48rem] text-[1.1875rem] leading-[1.6] text-body-ink">
+            The Care Den is a peer community for family caregivers navigating the
+            long haul of caring for aging parents, spouses, partners, or loved
+            ones. We hold the human being behind the caregiving role. Five to six
+            sessions a week. A real community. Steady support between the
+            appointments.
+          </p>
+          <p className={`mt-8 ${emphasisGreen}`}>
+            We believe caregivers deserve care too.
+          </p>
+        </div>
+        <Image
+          src="/illustrations/plant.png"
+          alt="A watercolor illustration of a potted aloe plant."
+          width={340}
+          height={340}
+          className="hidden h-auto w-full max-w-[340px] md:block"
+        />
       </section>
 
       <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
@@ -109,28 +119,37 @@ export default function Partners() {
       </section>
 
       <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
-        <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:px-16">
-          <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
-            What partnership can do
-          </h2>
-          <div className="mt-8 flex max-w-[48rem] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
-            <p>
-              Partnerships let caregivers receive steady peer support in the long
-              stretches between appointments, transitions, and crises.
-            </p>
-            <p>
-              Together, we can reach caregivers who need support but don&rsquo;t
-              know where to look. We can reduce the isolation that drives
-              burnout. We can make community-based support a real part of the
-              care plan, not a footnote. We can help caregivers feel seen,
-              understood, and held while they do the work no one trained them for
-              and most often, no one compensates.
-            </p>
-            <p>
-              Partnership also helps The Care Den grow as a small, women-led
-              social impact business without compromising the safety or integrity
-              of the community.
-            </p>
+        <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:grid md:grid-cols-[300px_minmax(0,40rem)] md:items-center md:justify-between md:gap-x-12 md:px-16">
+          <Image
+            src="/illustrations/hands.png"
+            alt="A watercolor illustration of two clasped hands."
+            width={300}
+            height={300}
+            className="hidden h-auto w-full max-w-[300px] md:block"
+          />
+          <div>
+            <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
+              What partnership can do
+            </h2>
+            <div className="mt-8 flex max-w-[48rem] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
+              <p>
+                Partnerships let caregivers receive steady peer support in the long
+                stretches between appointments, transitions, and crises.
+              </p>
+              <p>
+                Together, we can reach caregivers who need support but don&rsquo;t
+                know where to look. We can reduce the isolation that drives
+                burnout. We can make community-based support a real part of the
+                care plan, not a footnote. We can help caregivers feel seen,
+                understood, and held while they do the work no one trained them for
+                and most often, no one compensates.
+              </p>
+              <p>
+                Partnership also helps The Care Den grow as a small, women-led
+                social impact business without compromising the safety or integrity
+                of the community.
+              </p>
+            </div>
           </div>
         </div>
       </section>
