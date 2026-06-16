@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SiteHeader from "./site-header";
 import SiteFooter from "./site-footer";
 
@@ -61,7 +62,13 @@ export default function Home() {
           </div>
         </div>
 
-        <IllustrationSlot className="max-w-[340px] md:mt-16" />
+        <Image
+          src="/illustrations/hero.png"
+          alt="An overhead illustration of people holding hands in a circle."
+          width={340}
+          height={340}
+          className="h-auto w-full max-w-[340px] rounded-2xl md:mt-16"
+        />
       </section>
 
       <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
@@ -90,7 +97,13 @@ export default function Home() {
               </div>
             </div>
 
-            <IllustrationSlot className="max-w-[340px] md:mt-20" />
+            <Image
+              src="/illustrations/what-we-are.png"
+              alt="An illustration for The Care Den."
+              width={340}
+              height={340}
+              className="hidden h-auto w-full max-w-[340px] rounded-2xl md:mt-20 md:block"
+            />
           </div>
 
           <p className="mx-auto mt-12 max-w-[42ch] text-center font-display text-[clamp(1.375rem,2.5vw,1.625rem)] italic leading-[1.4] text-body-ink md:mt-16">
