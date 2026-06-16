@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import SiteHeader from "../site-header";
 import SiteFooter from "../site-footer";
@@ -52,9 +53,12 @@ export default function About() {
             refill their cup, together.
           </h1>
         </div>
-        <div
-          aria-hidden="true"
-          className="hidden aspect-square w-full max-w-[340px] rounded-2xl border border-body-ink/10 bg-body-ink/[0.025] md:block"
+        <Image
+          src="/illustrations/about-teapot.png"
+          alt="A watercolor illustration of a teapot pouring hearts into a cup of tea."
+          width={340}
+          height={340}
+          className="hidden h-auto w-full max-w-[340px] md:block"
         />
       </section>
 
