@@ -110,9 +110,12 @@ export default function About() {
               </p>
             </div>
             <div className="md:ml-auto md:max-w-[26rem]">
-              <div
-                aria-hidden="true"
-                className="aspect-[4/5] w-full max-w-[320px] rounded-2xl border border-body-ink/10 bg-body-ink/[0.03]"
+              <Image
+                src="/illustrations/lynn-portrait.jpg"
+                alt="Lynn McGuire-Raj"
+                width={320}
+                height={400}
+                className="aspect-[4/5] w-full max-w-[320px] rounded-2xl object-cover"
               />
               <p className="mt-7 text-[1.1875rem] leading-[1.6] text-body-ink">
                 <strong className="font-semibold">

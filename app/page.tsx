@@ -204,7 +204,13 @@ export default function Home() {
           </a>
         </div>
 
-        <IllustrationSlot className="max-w-[340px] md:mt-20" />
+        <Image
+          src="/illustrations/who-built-this.jpg"
+          alt="Jacquelyn Revere and Lynn McGuire-Raj"
+          width={320}
+          height={400}
+          className="hidden aspect-[4/5] w-full max-w-[320px] rounded-2xl object-cover md:mt-20 md:block"
+        />
       </section>
 
       <SiteFooter />
