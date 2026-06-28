@@ -62,11 +62,35 @@ const INCLUDED = [
 // pending (a blank oneLine renders the muted "Bio coming soon."). Each entry is
 // { name, oneLine, photo? }; initials() derives the avatar fallback from the
 // name, and a photo added later drops into the same circle with no layout shift.
-const FACILITATORS: { name: string; oneLine: string; photo?: string }[] = [
-  { name: "Andrea Hughes", oneLine: "Caring for her mom with Alzheimer's.", photo: "/illustrations/andrea.jpg" },
-  { name: "Lynn McGuire Raj", oneLine: "Cared for her mom through heart disease and her dad through dementia. Then went to school for it." },
-  { name: "Nikki Nurse", oneLine: "", photo: "/illustrations/nikki.jpg" },
-  { name: "Jacquelyn Revere", oneLine: "Turned a seven-year journey caring for her grandmother and mom into this work." },
+const FACILITATORS: {
+  name: string;
+  bio: string;
+  photo?: string;
+  instagram?: string;
+}[] = [
+  {
+    name: "Andrea Hughes",
+    bio: "As full-time caregiver to her mom with early-onset Alzheimer's disease, Andrea is passionate about helping caregivers find support, create joy, and stay connected to who they are outside of caregiving.",
+    photo: "/illustrations/andrea.jpg",
+    instagram: "https://www.instagram.com/itsandreakrystal/",
+  },
+  {
+    name: "Lynn McGuire Raj",
+    bio: "While caring for her dad with dementia, Lynn went back to grad school to better understand what both she and her father were experiencing. Now she wants to help caregivers build resilience and self-compassion throughout their season of care.",
+    photo: "/illustrations/lynn.jpg",
+    instagram: "https://www.instagram.com/lynnraj/",
+  },
+  {
+    name: "Nikki Nurse",
+    bio: "After caring for her mom with cognitive disabilities, Nikki is here to remind you to prioritize YOU. She's known for helping regulate your nervous system, and stylize your wardrobe and home, because your burnout era is cancelled!",
+    photo: "/illustrations/nikki.jpg",
+  },
+  {
+    name: "Jacquelyn Revere",
+    bio: "After seven years caring for both her grandmother and mom through Alzheimer's disease, Jacquelyn transformed her caregiving journey into a mission to ensure no caregiver has to do it alone. She's passionate about creating a community where caregivers feel seen, supported, and deeply understood.",
+    photo: "/illustrations/jacquelyn.jpg",
+    instagram: "https://www.instagram.com/momofmymom/",
+  },
 ];
 
 // derive initials from the name so the avatar placeholder needs no upkeep
@@ -151,34 +175,70 @@ export default function Join() {
           done the caregiving or worked in the care space. Meet a few on the
           crew…
         </p>
-        <div className="mt-10 flex flex-wrap gap-x-10 gap-y-10">
-          {FACILITATORS.map((f) => (
-            <div key={f.name} className="w-[13rem]">
-              <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-den-green/10 text-[1.0625rem] font-semibold text-den-green-deep">
-                {f.photo ? (
-                  <img
-                    src={f.photo}
-                    alt={f.name}
-                    className="h-full w-full object-cover"
-                  />
-                ) : (
-                  <span aria-hidden="true">{initials(f.name)}</span>
-                )}
+        <div className="mt-12 grid grid-cols-1 gap-x-10 gap-y-12 sm:grid-cols-2 md:max-w-4xl">
+          {FACILITATORS.map((f) => {
+            const handle = f.instagram
+              ? "@" + (f.instagram.split("/").filter(Boolean).pop() ?? "")
+              : null;
+            const inner = (
+              <>
+                <div className="aspect-square w-full max-w-[210px] overflow-hidden rounded-xl bg-den-green/10 transition group-hover:opacity-95">
+                  {f.photo ? (
+                    <img
+                      src={f.photo}
+                      alt={f.name}
+                      className="h-full w-full object-cover"
+                    />
+                  ) : (
+                    <div className="flex h-full w-full items-center justify-center text-3xl font-semibold text-den-green-deep">
+                      <span aria-hidden="true">{initials(f.name)}</span>
+                    </div>
+                  )}
+                </div>
+                <p className="mt-4 font-display text-[1.25rem] leading-[1.3] text-den-green-deep transition group-hover:text-den-green">
+                  {f.name}
+                </p>
+                <p className="mt-2 text-[1rem] leading-[1.55] text-body-ink">
+                  {f.bio}
+                </p>
+                {handle ? (
+                  <div className="mt-3 flex items-center gap-2 text-body-ink">
+                    <svg
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect x="2" y="2" width="20" height="20" rx="5" />
+                      <circle cx="12" cy="12" r="4" />
+                      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                    </svg>
+                    <span className="text-[0.95rem] text-body-ink/70">{handle}</span>
+                  </div>
+                ) : null}
+              </>
+            );
+            return f.instagram ? (
+              <a
+                key={f.name}
+                href={f.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col"
+              >
+                {inner}
+              </a>
+            ) : (
+              <div key={f.name} className="flex flex-col">
+                {inner}
               </div>
-              <p className="mt-3 font-display text-[1.1875rem] leading-[1.3] text-den-green-deep">
-                {f.name}
-              </p>
-              {f.oneLine ? (
-                <p className="mt-1 text-[1.0625rem] leading-[1.5] text-body-ink/80">
-                  {f.oneLine}
-                </p>
-              ) : (
-                <p className="mt-1 text-[1.0625rem] italic leading-[1.5] text-body-ink/50">
-                  Bio coming soon.
-                </p>
-              )}
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
