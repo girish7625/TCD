@@ -63,9 +63,9 @@ const INCLUDED = [
 // { name, oneLine, photo? }; initials() derives the avatar fallback from the
 // name, and a photo added later drops into the same circle with no layout shift.
 const FACILITATORS: { name: string; oneLine: string; photo?: string }[] = [
-  { name: "Andrea Hughes", oneLine: "Caring for her mom with Alzheimer's." },
+  { name: "Andrea Hughes", oneLine: "Caring for her mom with Alzheimer's.", photo: "/illustrations/andrea.jpg" },
   { name: "Lynn McGuire Raj", oneLine: "Cared for her mom through heart disease and her dad through dementia. Then went to school for it." },
-  { name: "Nikki Nurse", oneLine: "" },
+  { name: "Nikki Nurse", oneLine: "", photo: "/illustrations/nikki.jpg" },
   { name: "Jacquelyn Revere", oneLine: "Turned a seven-year journey caring for her grandmother and mom into this work." },
 ];
 
