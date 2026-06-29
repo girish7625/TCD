@@ -47,8 +47,7 @@ export default function About() {
 
       <section className="mx-auto mt-12 grid w-full max-w-6xl content-start gap-x-12 px-6 sm:px-10 md:mt-16 md:grid-cols-[minmax(0,40rem)_340px] md:items-center md:justify-between md:px-16">
         <div>
-          <p className="eyebrow">About</p>
-          <h1 className="mt-8 font-display text-[clamp(2rem,5vw,3.25rem)] font-normal leading-[1.08] text-body-ink">
+          <h1 className="font-display text-[clamp(2rem,5vw,3.25rem)] font-normal leading-[1.08] text-body-ink">
             A place for caregivers to rest <em className="accent">&amp;</em>{" "}
             refill their cup, together.
           </h1>

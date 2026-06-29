@@ -6,9 +6,7 @@ import Image from "next/image";
 const NAV_LINKS = [
   { label: "Join", href: "/join" },
   { label: "About", href: "/about" },
-  { label: "Essays", href: "/essays" },
   { label: "Partners", href: "/partners" },
-  { label: "Sign in", href: "https://heartbeat.com/the-care-den" },
 ];
 
 const LINK_BASE =
@@ -33,7 +31,8 @@ export default function SiteHeader() {
   }, [menuOpen]);
 
   return (
-    <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 sm:px-10 md:px-16">
+    <header className="sticky top-0 z-40 border-b border-body-ink/10 bg-porch-cream/95 backdrop-blur">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 sm:px-10 md:px-16">
       <a
         href="/"
         aria-label="The Care Den — home"
@@ -143,6 +142,7 @@ export default function SiteHeader() {
           </nav>
         </div>
       )}
-    </header>
+    </div>
+      </header>
   );
 }

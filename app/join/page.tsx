@@ -108,8 +108,7 @@ export default function Join() {
 
       <section className="mx-auto mt-12 grid w-full max-w-6xl content-start gap-x-12 px-6 sm:px-10 md:mt-16 md:grid-cols-[minmax(0,40rem)_340px] md:items-center md:justify-between md:px-16">
         <div>
-          <p className="eyebrow">Membership</p>
-          <h1 className="mt-8 font-display text-[clamp(2.25rem,5.5vw,4rem)] font-normal leading-[1.05] text-body-ink">
+          <h1 className="font-display text-[clamp(2.25rem,5.5vw,4rem)] font-normal leading-[1.05] text-body-ink">
             Pull up a chair.
           </h1>
           <p className="mt-8 max-w-[48rem] text-[1.1875rem] leading-[1.6] text-body-ink">
