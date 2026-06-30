@@ -14,23 +14,23 @@ const linkClass =
 const FAQ = [
   {
     q: "What is The Care Den?",
-    a: "The Care Den is a peer-led membership community for caregivers of persons living with dementia, terminal or chronic illness or severe disability. Members meet in facilitated virtual sessions hosted five to seven times a week and connect between sessions through our private community platform.",
+    a: "The Care Den is a peer-led, online membership community for caregivers of persons living with dementia, serious illness or disability. Members meet in facilitated virtual sessions hosted five to seven times a week and connect between sessions through our private community platform.",
   },
   {
     q: "Who is The Care Den for?",
-    a: "The Care Den is primarily for women caring for aging parents, partners, or loved ones, particularly through dementia, chronic illness, recovery, or long-term decline. Men are welcome but the community’s voice is shaped by and for women.",
+    a: "The Care Den is primarily for women caring for aging parents, partners, or loved ones, particularly through dementia, serious or chronic illness, disability, recovery, or long-term decline. Men are welcome but the community’s voice is shaped by and for women.",
   },
   {
     q: "How much does membership cost?",
-    a: "Membership starts at $20 a month for full community access. You can pay-it-forward at the $35 or $50 levels per month if you feel inclined and have the means to help subsidize others or sustainably compensate our facilitators. No contract. You can cancel anytime.",
+    a: "Membership starts at $27 a month for full community access. You can pay-it-forward at the $40 level per month if you feel inclined and have the means to help subsidize others or sustainably compensate our facilitators. No contract. You can cancel anytime.",
   },
   {
-    q: "What if I can’t afford $20 a month?",
-    a: "Write to us. We have a small number of complimentary memberships and we would rather have you in the room.",
+    q: "What if I can’t afford $27 a month?",
+    a: "Write to us. We have a small number of discounted memberships and we would rather have you in the room.",
   },
   {
     q: "Is this therapy?",
-    a: "No. The Care Den is a peer community, not a clinical service. Our facilitators are trained peer supporters with lived caregiving experience. If you need clinical mental health support, please reach out to a licensed professional.",
+    a: "No. The Care Den is a peer community, not a clinical service. Our facilitators are primarily trained peer supporters with lived caregiving experience. Occasionally, professionals who work in the care field provide education, resources and support. If you need clinical mental health counseling, please reach out to a licensed professional.",
   },
   {
     q: "Do I have to attend every session?",
@@ -96,7 +96,7 @@ export default function Guidelines() {
               <strong className="font-semibold">No advice unless asked.</strong>{" "}
               We listen first. We share our own experience when it helps. We
               don&rsquo;t fix, lecture, or prescribe. &ldquo;You should...&rdquo;
-              is rarely useful in here.
+              is rarely useful.
             </p>
             <p>
               <strong className="font-semibold">Choice always.</strong> You can
@@ -170,7 +170,7 @@ export default function Guidelines() {
         </h2>
         <p className="mt-8 max-w-[48rem] text-[1.1875rem] leading-[1.6] text-body-ink">
           If a member says or does something that breaks these guidelines, reach
-          out to a facilitator or write to us at{" "}
+          out to a facilitator inside The Den or write to us at{" "}
           <a href="mailto:hello@thecareden.com" className={linkClass}>
             hello@thecareden.com
           </a>

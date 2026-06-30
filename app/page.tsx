@@ -32,8 +32,8 @@ export default function Home() {
 
           <p className="mt-10 max-w-[50ch] pr-12 text-[1.1875rem] leading-[1.6] text-body-ink md:pr-0">
             A room for those carrying the emotional weight of caring for aging
-            parents, partners or loved ones. A peer-led community that gets it
-            without the explanation.
+            parents, partners or loved ones with dementia, serious illness or
+            disability. A peer-led community that gets it without explanation.
           </p>
 
           <div className="mt-8 flex items-center gap-5 sm:gap-7">
@@ -77,13 +77,13 @@ export default function Home() {
                   your cup.
                 </p>
                 <p>
-                  Members gather (virtually) five to six times a week to talk,
-                  sit, laugh, vent, and breathe. Support circles and workshops
-                  are led by peer facilitators who have been caregivers
-                  themselves or have worked in care spaces and generously
-                  offer to share their wisdom. The community lives quietly
-                  between sessions, in our private online platform, in threads,
-                  and in small acts of care members do for each other.
+                  Members gather almost daily to talk, sit, laugh, vent, and
+                  breathe. Support circles and workshops are led by peer
+                  facilitators who have been caregivers themselves or have
+                  worked in care spaces and generously offer to share their
+                  wisdom. The community lives quietly between sessions, in our
+                  private online platform, in posts, direct messages and in
+                  small acts of care members do for each other.
                 </p>
               </div>
             </div>
@@ -136,11 +136,11 @@ export default function Home() {
                 A week inside The Care Den is built around real conversation.
                 Mondays start with a support circle. Midweek offers guided
                 exercises to calm and balance the nervous system. Friday night
-                hangs are for socializing. And Sundays slow down with sessions
-                that honor grief that hasn&rsquo;t yet been named. Some weeks
-                feature an expert in the field of care. Some weeks just hold
-                space. Come to one session a week or all of them. You are
-                welcome to engage or stay quiet. We hold room for all of it.
+                hangs are for socializing. And Sundays slow down with a
+                meditation or sessions that honor grief. Some weeks feature an
+                expert in the field of care. Some weeks just hold space. Come to
+                one session a week or all of them. You are welcome to engage or
+                stay silent. We hold room for all of it.
               </p>
             </div>
 

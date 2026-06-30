@@ -48,9 +48,10 @@ export default function Partners() {
           <p className="mt-8 max-w-[48rem] text-[1.1875rem] leading-[1.6] text-body-ink">
             The Care Den is a peer community for family caregivers navigating the
             long haul of caring for aging parents, spouses, partners, or loved
-            ones. We hold the human being behind the caregiving role. Five to six
-            sessions a week. A real community. Steady support between the
-            appointments.
+            ones. We hold the human being behind the caregiving role. Facilitated
+            group sessions held almost daily. From guided meditations to grief
+            support, socials to self-care practices. Steady community support
+            between the appointments.
           </p>
           <p className={`mt-8 ${emphasisGreen}`}>
             We believe caregivers deserve care too.

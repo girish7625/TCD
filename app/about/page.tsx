@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const PRINCIPLES = [
   {
     lead: "We hold the room. We don’t run a program.",
-    body: "The Care Den is not a curriculum, though we develop workshops. It’s a space members come into and use the way they need. We open the door. We trust the people in it.",
+    body: "The Care Den is not a curriculum, though we develop workshops. It’s a space members come into and use the way they need. We open the door, we establish guidelines and we trust the people in it.",
   },
   {
     lead: "We get it. So we don’t make people explain.",
@@ -20,11 +20,11 @@ const PRINCIPLES = [
   },
   {
     lead: "We move at the pace of the people inside.",
-    body: "Caregivers are exhausted. We don’t push, demand, or pressure. The community moves at human pace, and The Care Den grows alongside its members.",
+    body: "Caregivers are exhausted. We don’t push, demand or pressure. The community moves at a human pace, and The Care Den grows alongside its members.",
   },
   {
     lead: "We are rooted in women. The room is open to anyone who needs it.",
-    body: "The community is primarily women, built by women, shaped by mostly women. Men are welcome. But we get that our messaging, somewhat like caregiving itself, doesn’t attract them as much as it does women.",
+    body: "The community is primarily women, built by women, shaped mostly by women. Men are welcome and we do have a few male members. But we get that our messaging, somewhat like caregiving itself, doesn’t attract them as much as it does women.",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function About() {
         </h2>
         <div className="mt-8 flex max-w-[48rem] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
           <p>
-            More than 53 million Americans are caregivers. Most of them are
+            More than 64 million Americans are caregivers. Most of them are
             women. Many of them are caring for someone they love with dementia,
             chronic illness or severe disability.
           </p>
@@ -170,9 +170,10 @@ export default function About() {
             <p>
               We are a supportive group, but we are not solely a
               &ldquo;support group&rdquo;. We are not therapy, we do not diagnose
-              or treat mental health conditions. We are not a wellness app
-              though we support our members&rsquo; well-being. We are not an
-              educational course or a curriculum.
+              or treat mental health conditions. We are not technically a
+              &ldquo;wellness app&rdquo; though we support our members&rsquo;
+              well-being. We are not an educational course but we do learn from
+              one another.
             </p>
             <p>
               We are a room. With real people. Held together by those who have
@@ -190,9 +191,9 @@ export default function About() {
           <div className="mt-8 flex max-w-[48rem] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
             <p>
               The community is the center of everything. Around it, we are slowly
-              building tools that make the den a richer experience: courses on
-              building resilience, promoting practices of self-care, and essays
-              and reflections from members and facilitators.
+              building tools that make The Care Den a richer experience: courses
+              on building resilience, promoting practices of self-care and
+              essays and reflections from facilitators and members.
             </p>
             <p>All of it to support happier, healthier and stronger caregivers.</p>
           </div>

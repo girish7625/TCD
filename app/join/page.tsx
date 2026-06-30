@@ -70,10 +70,10 @@ export default function Join() {
             Pull up a chair.
           </h1>
           <p className="mt-8 max-w-[48rem] text-[1.1875rem] leading-[1.6] text-body-ink">
-            The Care Den is a membership community for those caring for aging
-            parents, partners, and loved ones. As low as $20 a month. Tiered
-            pricing offers pay-what-you-can to pay-it-forward options. No
-            contract. Leave anytime.
+            The Care Den is a private membership community for those caring for
+            aging parents, partners, and loved ones with dementia, serious
+            illness or disability. Monthly membership starts at less than a
+            dollar a day. No annual contract. Leave anytime.
           </p>
           <div className="mt-9">
             <a href="https://heartbeat.com/the-care-den" className={ctaClass}>
@@ -129,7 +129,7 @@ export default function Join() {
         </h2>
         <p className="mt-6 max-w-[48rem] text-[1.1875rem] leading-[1.6] text-body-ink">
           Every session is held by a peer facilitator, someone who has either
-          done the caregiving or worked in the care space. Meet a few on the
+          been a family caregiver or worked in the care space. Meet a few on the
           crew…
         </p>
         <Facilitators />
@@ -158,11 +158,11 @@ export default function Join() {
           What it costs
         </h2>
         <p className="mt-8 max-w-[48rem] text-[1.1875rem] leading-[1.6] text-body-ink">
-          Memberships start at $20 a month, with $35 and $50 tiers for those who
-          can give more and want to ensure facilitators receive fair
-          compensation. We keep this simple on purpose. If $20 a month is hard
-          right now, write to us. We have a small number of complimentary
-          memberships and we&rsquo;d rather have you in the room.
+          Memberships start at $27 a month, with a $40 pay-it-forward option for
+          those who can afford more and wish to support those in financial need
+          gain access. If $27 a month is hard right now, write to us. We have a
+          small number of discounted memberships we can offer and we&rsquo;d
+          rather have you in the room.
         </p>
         <p className="mt-8 font-display text-[clamp(1.375rem,2.5vw,1.75rem)] italic leading-[1.35] text-den-green-deep">
           Ready?
