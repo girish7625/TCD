@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 const NAV_LINKS = [
@@ -10,11 +11,23 @@ const NAV_LINKS = [
   { label: "Partners", href: "/partners" },
 ];
 
+// Shared base for the icon buttons (hamburger, close).
 const LINK_BASE =
   "text-body-ink transition-colors hover:text-den-green-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-den-green-deep";
 
 export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  // The current page's nav link gets a steady den-green underline so it reads as
+  // "you're here," matching the hover underline used elsewhere on the site.
+  const navLinkClass = (href: string, size: string) => {
+    const active = pathname === href;
+    const state = active
+      ? "text-den-green-deep underline decoration-den-green-deep decoration-[1.5px] underline-offset-4"
+      : "text-body-ink hover:text-den-green-deep";
+    return `${size} transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-den-green-deep ${state}`;
+  };
 
   // While the overlay is open: Escape closes it and the page behind it
   // doesn't scroll.
@@ -55,7 +68,11 @@ export default function SiteHeader() {
             <ul className="flex items-center gap-8">
               {NAV_LINKS.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className={`text-[1.0625rem] ${LINK_BASE}`}>
+                  <a
+                    href={link.href}
+                    aria-current={pathname === link.href ? "page" : undefined}
+                    className={navLinkClass(link.href, "text-[1.0625rem]")}
+                  >
                     {link.label}
                   </a>
                 </li>
@@ -137,8 +154,9 @@ export default function SiteHeader() {
                   <li key={link.label}>
                     <a
                       href={link.href}
+                      aria-current={pathname === link.href ? "page" : undefined}
                       onClick={() => setMenuOpen(false)}
-                      className={`text-2xl ${LINK_BASE}`}
+                      className={navLinkClass(link.href, "text-2xl")}
                     >
                       {link.label}
                     </a>
