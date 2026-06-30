@@ -17,15 +17,6 @@ const QUOTES = [
   },
 ];
 
-function IllustrationSlot({ className = "" }: { className?: string }) {
-  return (
-    <div
-      aria-hidden="true"
-      className={`hidden aspect-square w-full rounded-2xl border border-body-ink/10 bg-body-ink/[0.025] md:block ${className}`}
-    />
-  );
-}
-
 export default function Home() {
   return (
     <main className="settle flex min-h-screen flex-col py-12 sm:py-14 md:py-16">
@@ -132,7 +123,7 @@ export default function Home() {
             alt="A watercolor illustration of an open planner with a coffee cup, glasses, pens, and plants."
             width={340}
             height={340}
-            className="hidden h-auto w-full max-w-[340px] md:mt-20 md:block"
+            className="hidden h-auto w-full max-w-[340px] md:block"
           />
 
           <div>
@@ -209,7 +200,7 @@ export default function Home() {
           alt="Jacquelyn Revere and Lynn McGuire-Raj"
           width={320}
           height={400}
-          className="hidden aspect-[4/5] w-full max-w-[320px] rounded-2xl object-cover md:mt-20 md:block"
+          className="hidden aspect-[4/5] w-full max-w-[320px] rounded-2xl object-cover md:block"
         />
       </section>
 
