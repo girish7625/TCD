@@ -90,7 +90,7 @@ export default function Join() {
         />
       </section>
 
-      <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
+      <section className="mt-12 w-full bg-porch-cream-deep py-14 md:mt-16 md:py-16">
         <div className="mx-auto w-full max-w-4xl px-6 sm:px-10 md:px-16">
           <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
             A sample week inside the den
@@ -123,7 +123,7 @@ export default function Join() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
+      <section className="mx-auto mt-12 w-full max-w-6xl px-6 sm:px-10 md:mt-16 md:px-16">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           Who holds the room
         </h2>
@@ -135,7 +135,7 @@ export default function Join() {
         <Facilitators />
       </section>
 
-      <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
+      <section className="mt-12 w-full bg-porch-cream-deep py-14 md:mt-16 md:py-16">
         <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:px-16">
           <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
             What&rsquo;s included
@@ -153,7 +153,7 @@ export default function Join() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
+      <section className="mx-auto mt-12 w-full max-w-6xl px-6 sm:px-10 md:mt-16 md:px-16">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           What it costs
         </h2>

@@ -71,7 +71,7 @@ export default function Home() {
         />
       </section>
 
-      <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
+      <section className="mt-12 w-full bg-porch-cream-deep py-14 md:mt-16 md:py-16">
         <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:px-16">
           <div className="md:grid md:grid-cols-[minmax(0,40rem)_340px] md:items-start md:justify-between md:gap-x-12">
             <div>
@@ -112,7 +112,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 grid w-full max-w-6xl grid-cols-1 gap-16 px-6 sm:px-10 md:mt-28 md:grid-cols-3 md:gap-12 md:px-16">
+      <section className="mx-auto mt-12 grid w-full max-w-6xl grid-cols-1 gap-16 px-6 sm:px-10 md:mt-16 md:grid-cols-3 md:gap-12 md:px-16">
         {QUOTES.map((quote, i) => (
           <figure key={i}>
             <blockquote className="font-display text-[clamp(1.25rem,2vw,1.5rem)] italic leading-[1.4] text-body-ink">
@@ -125,7 +125,7 @@ export default function Home() {
         ))}
       </section>
 
-      <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
+      <section className="mt-12 w-full bg-porch-cream-deep py-14 md:mt-16 md:py-16">
         <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:grid md:grid-cols-[340px_minmax(0,34rem)] md:items-start md:justify-between md:gap-x-12 md:px-16">
           <Image
             src="/illustrations/rhythm.png"
@@ -166,7 +166,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:grid md:grid-cols-[minmax(0,40rem)_340px] md:items-start md:justify-between md:gap-x-12 md:px-16">
+      <section className="mx-auto mt-12 w-full max-w-6xl px-6 sm:px-10 md:mt-16 md:grid md:grid-cols-[minmax(0,40rem)_340px] md:items-start md:justify-between md:gap-x-12 md:px-16">
         <div>
           <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
             Who built this

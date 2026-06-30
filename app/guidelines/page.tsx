@@ -76,7 +76,7 @@ export default function Guidelines() {
         </p>
       </section>
 
-      <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
+      <section className="mt-12 w-full bg-porch-cream-deep py-14 md:mt-16 md:py-16">
         <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:px-16">
           <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
             The basics
@@ -108,7 +108,7 @@ export default function Guidelines() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
+      <section className="mx-auto mt-12 w-full max-w-6xl px-6 sm:px-10 md:mt-16 md:px-16">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           About the sessions
         </h2>
@@ -151,7 +151,7 @@ export default function Guidelines() {
         </div>
       </section>
 
-      <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
+      <section className="mt-12 w-full bg-porch-cream-deep py-14 md:mt-16 md:py-16">
         <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:px-16">
           <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
             What we expect from each other
@@ -164,7 +164,7 @@ export default function Guidelines() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
+      <section className="mx-auto mt-12 w-full max-w-6xl px-6 sm:px-10 md:mt-16 md:px-16">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           If something goes wrong
         </h2>

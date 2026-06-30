@@ -65,7 +65,7 @@ export default function Partners() {
         />
       </section>
 
-      <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
+      <section className="mt-12 w-full bg-porch-cream-deep py-14 md:mt-16 md:py-16">
         <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:px-16">
           <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
             A note to healthcare and community professionals
@@ -99,7 +99,7 @@ export default function Partners() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
+      <section className="mx-auto mt-12 w-full max-w-6xl px-6 sm:px-10 md:mt-16 md:px-16">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           Why this matters
         </h2>
@@ -117,7 +117,7 @@ export default function Partners() {
         </p>
       </section>
 
-      <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
+      <section className="mt-12 w-full bg-porch-cream-deep py-14 md:mt-16 md:py-16">
         <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:grid md:grid-cols-[300px_minmax(0,40rem)] md:items-center md:justify-between md:gap-x-12 md:px-16">
           <Image
             src="/illustrations/hands.png"
@@ -153,7 +153,7 @@ export default function Partners() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
+      <section className="mx-auto mt-12 w-full max-w-6xl px-6 sm:px-10 md:mt-16 md:px-16">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           Who we work with
         </h2>
@@ -168,7 +168,7 @@ export default function Partners() {
         </div>
       </section>
 
-      <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
+      <section className="mt-12 w-full bg-porch-cream-deep py-14 md:mt-16 md:py-16">
         <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:px-16">
           <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
             Let&rsquo;s talk
