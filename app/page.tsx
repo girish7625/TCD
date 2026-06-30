@@ -67,7 +67,7 @@ export default function Home() {
           alt="An overhead illustration of people holding hands in a circle."
           width={340}
           height={340}
-          className="h-auto w-full max-w-[340px] rounded-2xl md:mt-16"
+          className="mt-12 h-auto w-full max-w-[340px] rounded-2xl md:mt-16"
         />
       </section>
 
@@ -102,7 +102,7 @@ export default function Home() {
               alt="An illustration for The Care Den."
               width={340}
               height={340}
-              className="hidden h-auto w-full max-w-[340px] rounded-2xl md:mt-20 md:block"
+              className="hidden h-auto w-full max-w-[340px] rounded-2xl md:block"
             />
           </div>
 

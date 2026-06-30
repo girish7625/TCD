@@ -524,7 +524,7 @@ export default function Legal() {
         </p>
       </section>
 
-      <section className="mx-auto mt-16 w-full max-w-6xl px-6 sm:px-10 md:mt-20 md:px-16">
+      <section className="mx-auto mt-8 w-full max-w-6xl px-6 sm:px-10 md:mt-10 md:px-16">
         <div className="max-w-[48rem]">
           {SECTIONS.map((s) => (
             <details
