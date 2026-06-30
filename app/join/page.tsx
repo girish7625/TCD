@@ -153,7 +153,7 @@ export default function Join() {
         </div>
       </section>
 
-      <section className="mx-auto mt-12 w-full max-w-6xl px-6 sm:px-10 md:mt-16 md:px-16">
+      <section className="mx-auto mt-12 w-full max-w-6xl px-6 pb-14 sm:px-10 md:mt-16 md:px-16 md:pb-16">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           What it costs
         </h2>
