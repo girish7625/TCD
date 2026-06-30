@@ -44,7 +44,7 @@ export default function SiteHeader() {
           width={3379}
           height={1000}
           priority
-          className="h-auto w-[160px] sm:w-[150px]"
+          className="h-auto w-[184px] sm:w-[173px]"
         />
       </a>
 
@@ -100,7 +100,7 @@ export default function SiteHeader() {
                 alt="The Care Den"
                 width={3379}
                 height={1000}
-                className="h-auto w-[160px]"
+                className="h-auto w-[184px]"
               />
             </a>
             <button

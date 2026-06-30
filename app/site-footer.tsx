@@ -4,24 +4,25 @@ const footerLink =
 export default function SiteFooter() {
   return (
     <footer className="mx-auto mt-24 w-full max-w-6xl border-t border-body-ink/10 px-6 pt-10 sm:px-10 md:mt-28 md:px-16">
-      <div className="grid grid-cols-1 gap-8 text-[1.0625rem] text-body-ink md:grid-cols-3 md:items-center md:gap-6">
-        <p>The Care Den</p>
-
-        <p className="md:text-center">
-          <a href="/guidelines" className={footerLink}>
-            Guidelines
-          </a>
-          <span className="mx-2 text-body-ink/40" aria-hidden="true">
-            &middot;
+      <div className="flex flex-col gap-6 text-[1.0625rem] text-body-ink md:flex-row md:items-center md:justify-between md:gap-6">
+        <p className="flex flex-wrap items-center gap-x-5 gap-y-2">
+          <span>The Care Den</span>
+          <span>
+            <a href="/guidelines" className={footerLink}>
+              Guidelines
+            </a>
+            <span className="mx-2 text-body-ink/40" aria-hidden="true">
+              &middot;
+            </span>
+            <a href="/legal" className={footerLink}>
+              Legal
+            </a>
           </span>
-          <a href="/contact" className={footerLink}>
-            Contact
-          </a>
         </p>
 
         <p className="md:text-right">
-          <a href="/legal" className={footerLink}>
-            Legal
+          <a href="/contact" className={footerLink}>
+            Contact
           </a>
           <span className="mx-2 text-body-ink/40" aria-hidden="true">
             &middot;
