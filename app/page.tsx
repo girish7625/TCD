@@ -200,7 +200,7 @@ export default function Home() {
           alt="Jacquelyn Revere and Lynn McGuire-Raj"
           width={320}
           height={400}
-          className="hidden aspect-[4/5] w-full max-w-[320px] rounded-2xl object-cover md:block"
+          className="hidden aspect-[4/5] w-full max-w-[320px] rounded-2xl object-cover md:mt-20 md:block"
         />
       </section>
 
