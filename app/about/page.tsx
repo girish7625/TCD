@@ -92,9 +92,12 @@ export default function About() {
           </h2>
           <div className="mt-10 grid gap-x-12 gap-y-14 md:grid-cols-2">
             <div className="md:max-w-[26rem]">
-              <div
-                aria-hidden="true"
-                className="aspect-[4/5] w-full max-w-[320px] rounded-2xl border border-body-ink/10 bg-body-ink/[0.03]"
+              <Image
+                src="/illustrations/jacquelyn.jpg"
+                alt="Jacquelyn Revere with her mother"
+                width={320}
+                height={400}
+                className="aspect-[4/5] w-full max-w-[320px] rounded-2xl object-cover"
               />
               <p className="mt-7 text-[1.1875rem] leading-[1.6] text-body-ink">
                 <strong className="font-semibold">Jacquelyn Revere</strong>{" "}
@@ -110,8 +113,8 @@ export default function About() {
             </div>
             <div className="md:ml-auto md:max-w-[26rem]">
               <Image
-                src="/illustrations/lynn-portrait.jpg"
-                alt="Lynn McGuire-Raj"
+                src="/illustrations/lynn.jpg"
+                alt="Lynn McGuire-Raj with her father"
                 width={320}
                 height={400}
                 className="aspect-[4/5] w-full max-w-[320px] rounded-2xl object-cover"

@@ -29,7 +29,7 @@ const FACILITATORS: Facilitator[] = [
     name: "Lynn McGuire Raj",
     title: "Co-founder",
     bio: "While caring for her dad with dementia, Lynn went back to grad school to better understand what both she and her father were experiencing. Now she wants to help caregivers build resilience and self-compassion throughout their season of care.",
-    photo: "/illustrations/lynn.jpg",
+    photo: "/illustrations/lynn-portrait.jpg",
     instagram: "https://www.instagram.com/lynnraj/",
   },
   {
@@ -43,7 +43,7 @@ const FACILITATORS: Facilitator[] = [
     name: "Jacquelyn Revere",
     title: "Co-founder",
     bio: "After seven years caring for both her grandmother and mom through Alzheimer's disease, Jacquelyn transformed her caregiving journey into a mission to ensure no caregiver has to do it alone. She's passionate about creating a community where caregivers feel seen, supported, and deeply understood.",
-    photo: "/illustrations/jacquelyn.jpg",
+    photo: "/illustrations/jacquelyn-portrait.jpg",
     instagram: "https://www.instagram.com/momofmymom/",
   },
 ];
