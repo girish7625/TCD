@@ -166,19 +166,21 @@ export default function Join() {
         </p>
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
-        <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
-          Ready?
-        </h2>
-        <div className="mt-8">
-          <a href="https://heartbeat.com/the-care-den" className={ctaClass}>
-            Become a member
-          </a>
+      <section className="mt-12 w-full bg-porch-cream-deep py-14 md:mt-16 md:py-16">
+        <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:px-16">
+          <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
+            Ready?
+          </h2>
+          <div className="mt-8">
+            <a href="https://heartbeat.com/the-care-den" className={ctaClass}>
+              Become a member
+            </a>
+          </div>
+          <p className="mt-5 max-w-[48rem] text-[1.0625rem] leading-[1.6] text-body-ink/80">
+            You&rsquo;ll be redirected to our community platform to complete
+            signup.
+          </p>
         </div>
-        <p className="mt-5 max-w-[48rem] text-[1.0625rem] leading-[1.6] text-body-ink/80">
-          You&rsquo;ll be redirected to our community platform to complete
-          signup.
-        </p>
       </section>
 
       <SiteFooter />
