@@ -66,8 +66,7 @@ export default function Guidelines() {
       <SiteHeader />
 
       <section className="mx-auto mt-12 w-full max-w-6xl px-6 sm:px-10 md:mt-16 md:px-16">
-        <p className="eyebrow">Guidelines</p>
-        <h1 className="mt-8 font-display text-[clamp(2rem,5vw,3.25rem)] font-normal leading-[1.08] text-body-ink">
+        <h1 className="font-display text-[clamp(2rem,5vw,3.25rem)] font-normal leading-[1.08] text-body-ink">
           How we hold the room.
         </h1>
         <p className="mt-8 max-w-[48rem] text-[1.1875rem] leading-[1.6] text-body-ink">

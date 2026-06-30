@@ -17,8 +17,7 @@ export default function Contact() {
       <SiteHeader />
 
       <section className="mx-auto mt-12 w-full max-w-6xl px-6 sm:px-10 md:mt-16 md:px-16">
-        <p className="eyebrow">Contact</p>
-        <h1 className="mt-8 font-display text-[clamp(2.25rem,5.5vw,4rem)] font-normal leading-[1.05] text-body-ink">
+        <h1 className="font-display text-[clamp(2.25rem,5.5vw,4rem)] font-normal leading-[1.05] text-body-ink">
           Say hello.
         </h1>
       </section>
