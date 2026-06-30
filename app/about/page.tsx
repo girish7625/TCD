@@ -140,7 +140,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 w-full max-w-6xl px-6 sm:px-10 md:mt-28 md:px-16">
+      <section className="mx-auto mt-12 w-full max-w-6xl px-6 sm:px-10 md:mt-16 md:px-16">
         <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
           What we stand for
         </h2>
@@ -182,7 +182,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 grid w-full max-w-6xl content-start gap-x-12 px-6 sm:px-10 md:mt-28 md:grid-cols-[minmax(0,40rem)_300px] md:items-center md:justify-between md:px-16">
+      <section className="mx-auto mt-12 grid w-full max-w-6xl content-start gap-x-12 px-6 sm:px-10 md:mt-16 md:grid-cols-[minmax(0,40rem)_300px] md:items-center md:justify-between md:px-16">
         <div>
           <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
             What we&rsquo;re building toward
