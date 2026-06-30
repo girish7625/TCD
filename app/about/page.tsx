@@ -85,7 +85,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
+      <section className="mt-12 w-full bg-porch-cream-deep py-14 md:mt-16 md:py-16">
         <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:px-16">
           <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
             Who built this
@@ -161,7 +161,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mt-24 w-full bg-porch-cream-deep py-14 md:mt-28 md:py-16">
+      <section className="mt-12 w-full bg-porch-cream-deep py-14 md:mt-16 md:py-16">
         <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:px-16">
           <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
             What we are not
