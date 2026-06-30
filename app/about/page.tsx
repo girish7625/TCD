@@ -196,6 +196,17 @@ export default function About() {
             </p>
             <p>All of it to support happier, healthier and stronger caregivers.</p>
           </div>
+          <p className="mt-8 font-display text-[clamp(1.375rem,2.5vw,1.75rem)] italic leading-[1.35] text-den-green-deep">
+            Want to come in?
+          </p>
+          <div className="mt-8">
+            <a
+              href="https://heartbeat.com/the-care-den"
+              className="inline-flex min-h-[2.75rem] items-center justify-center rounded-full bg-den-green px-5 py-2.5 text-[0.875rem] font-medium text-warm-white transition-colors duration-[250ms] ease-out hover:bg-den-green-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-den-green-deep"
+            >
+              Become a member
+            </a>
+          </div>
         </div>
         <Image
           src="/illustrations/heart.png"
@@ -206,23 +217,7 @@ export default function About() {
         />
       </section>
 
-      <section className="mt-12 w-full bg-porch-cream-deep py-14 md:mt-16 md:py-16">
-        <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:px-16">
-          <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
-            Want to come in?
-          </h2>
-          <div className="mt-8">
-            <a
-              href="https://heartbeat.com/the-care-den"
-              className="inline-flex min-h-[2.75rem] items-center justify-center rounded-full bg-den-green px-5 py-2.5 text-[0.875rem] font-medium text-warm-white transition-colors duration-[250ms] ease-out hover:bg-den-green-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-den-green-deep"
-            >
-              Become a member
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <SiteFooter />
+      <SiteFooter flush />
     </main>
   );
 }

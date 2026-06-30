@@ -199,7 +199,7 @@ export default function Partners() {
         </div>
       </section>
 
-      <SiteFooter />
+      <SiteFooter flush />
     </main>
   );
 }

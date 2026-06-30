@@ -164,26 +164,17 @@ export default function Join() {
           right now, write to us. We have a small number of complimentary
           memberships and we&rsquo;d rather have you in the room.
         </p>
-      </section>
-
-      <section className="mt-12 w-full bg-porch-cream-deep py-14 md:mt-16 md:py-16">
-        <div className="mx-auto w-full max-w-6xl px-6 sm:px-10 md:px-16">
-          <h2 className="font-display text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.15] text-den-green-deep">
-            Ready?
-          </h2>
-          <div className="mt-8">
-            <a href="https://heartbeat.com/the-care-den" className={ctaClass}>
-              Become a member
-            </a>
-          </div>
-          <p className="mt-5 max-w-[48rem] text-[1.0625rem] leading-[1.6] text-body-ink/80">
-            You&rsquo;ll be redirected to our community platform to complete
-            signup.
-          </p>
+        <p className="mt-8 font-display text-[clamp(1.375rem,2.5vw,1.75rem)] italic leading-[1.35] text-den-green-deep">
+          Ready?
+        </p>
+        <div className="mt-8">
+          <a href="https://heartbeat.com/the-care-den" className={ctaClass}>
+            Become a member
+          </a>
         </div>
       </section>
 
-      <SiteFooter />
+      <SiteFooter flush />
     </main>
   );
 }
