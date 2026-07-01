@@ -202,7 +202,7 @@ export default function About() {
           </p>
           <div className="mt-8">
             <a
-              href="https://heartbeat.com/the-care-den"
+              href="https://app.heartbeat.chat/thecareden/invitation?code=DEB656#landing-page"
               className="inline-flex min-h-[2.75rem] items-center justify-center rounded-full bg-den-green px-5 py-2.5 text-[0.875rem] font-medium text-warm-white transition-colors duration-[250ms] ease-out hover:bg-den-green-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-den-green-deep"
             >
               Become a member

@@ -76,7 +76,7 @@ export default function Join() {
             dollar a day. No annual contract. Leave anytime.
           </p>
           <div className="mt-9">
-            <a href="https://heartbeat.com/the-care-den" className={ctaClass}>
+            <a href="https://app.heartbeat.chat/thecareden/invitation?code=DEB656#landing-page" className={ctaClass}>
               Join now
             </a>
           </div>
@@ -168,7 +168,7 @@ export default function Join() {
           Ready?
         </p>
         <div className="mt-8">
-          <a href="https://heartbeat.com/the-care-den" className={ctaClass}>
+          <a href="https://app.heartbeat.chat/thecareden/invitation?code=DEB656#landing-page" className={ctaClass}>
             Become a member
           </a>
         </div>
