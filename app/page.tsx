@@ -106,10 +106,16 @@ export default function Home() {
       <section className="mx-auto mt-12 grid w-full max-w-6xl grid-cols-1 gap-16 px-6 sm:px-10 md:mt-16 md:grid-cols-3 md:gap-12 md:px-16">
         {QUOTES.map((quote, i) => (
           <figure key={i}>
-            <blockquote className="font-display text-[clamp(1.25rem,2vw,1.5rem)] italic leading-[1.4] text-body-ink">
+            <span
+              aria-hidden="true"
+              className="block font-display text-[2.75rem] leading-none text-den-green"
+            >
+              &ldquo;
+            </span>
+            <blockquote className="mt-2 font-display text-[clamp(1.25rem,2vw,1.5rem)] italic leading-[1.4] text-body-ink">
               {quote.text}
             </blockquote>
-            <figcaption className="mt-5 text-[1.0625rem] text-body-ink">
+            <figcaption className="mt-5 text-[1.0625rem] text-den-green-deep">
               &mdash; {quote.who}
             </figcaption>
           </figure>
