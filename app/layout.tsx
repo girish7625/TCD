@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Hanken_Grotesk, Cormorant_Garamond, Lora, Newsreader } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import ClarityAnalytics from "./clarity-analytics";
 import "./globals.css";
 
 // Display serif — old-style warmth that echoes the wordmark. Normal + italic
@@ -57,6 +58,7 @@ export default function RootLayout({
         {children}
         <Analytics />
         <SpeedInsights />
+        <ClarityAnalytics />
       </body>
     </html>
   );
