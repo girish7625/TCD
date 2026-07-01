@@ -39,6 +39,7 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
+  verification: { google: "MoEXb6DBhSxVlb1eTtNY4JbdUNDWvh5YQPyJD9BvFAY" },
   title: "The Care Den — A peer community for caregivers",
   description:
     "A room for those carrying the emotional weight of caring for aging parents, partners or loved ones. A peer-led community that gets it without the explanation.",
