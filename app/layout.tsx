@@ -39,6 +39,30 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.VERCEL_ENV === "production"
+      ? "https://thecareden.com"
+      : process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : "http://localhost:3000"
+  ),
+  openGraph: {
+    type: "website",
+    siteName: "The Care Den",
+    locale: "en_US",
+    images: [
+      {
+        url: "/og-card.png",
+        width: 1200,
+        height: 630,
+        alt: "The Care Den, where caregivers find each other",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og-card.png"],
+  },
   verification: { google: "MoEXb6DBhSxVlb1eTtNY4JbdUNDWvh5YQPyJD9BvFAY" },
   title: "The Care Den — A peer community for caregivers",
   description:
