@@ -40,11 +40,9 @@ const newsreader = Newsreader({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.VERCEL_ENV === "production"
-      ? "https://thecareden.com"
-      : process.env.VERCEL_URL
-        ? `https://${process.env.VERCEL_URL}`
-        : "http://localhost:3000"
+    process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : "http://localhost:3000"
   ),
   openGraph: {
     type: "website",
