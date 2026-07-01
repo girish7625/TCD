@@ -35,16 +35,23 @@ const FACILITATORS: Facilitator[] = [
   {
     name: "Nikki Nurse",
     title: "Peer facilitator",
-    bio: "After caring for her mom with cognitive disabilities, Nikki is here to remind you to prioritize YOU. She's known for helping regulate your nervous system, and stylize your wardrobe and home, because your burnout era is cancelled!",
+    bio: "Having cared for both of her parents, Nikki is here to remind you to prioritize YOU. She's known for helping regulate your nervous system, and stylize your wardrobe and home, because your burnout era is cancelled!",
     photo: "/illustrations/nikki.jpg",
     instagram: "https://www.instagram.com/alogcabininbrooklyn/",
   },
   {
     name: "Jacquelyn Revere",
     title: "Co-founder",
-    bio: "After seven years caring for both her grandmother and mom through Alzheimer's disease, Jacquelyn transformed her caregiving journey into a mission to ensure no caregiver has to do it alone. She's passionate about creating a community where caregivers feel seen, supported, and deeply understood.",
+    bio: "After caring for both her grandmother and mom through Alzheimer's disease, Jacquelyn transformed her caregiving journey into a mission to ensure no caregiver has to do it alone. She's passionate about creating a community where caregivers feel seen, supported, and deeply understood.",
     photo: "/illustrations/jacquelyn-portrait.jpg",
     instagram: "https://www.instagram.com/momofmymom/",
+  },
+  // Alma's Instagram handle still TBD; bio and photo confirmed.
+  {
+    name: "Alma Valencia",
+    title: "Peer facilitator",
+    bio: "Caring for her mom with FTD for 11 years, Alma knows that caregiving takes a village. That's why she shares her wisdom so generously and pays it forward by shining a light on the resources that have helped her and her family.",
+    photo: "/illustrations/alma.jpg",
   },
 ];
 
