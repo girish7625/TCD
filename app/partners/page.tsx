@@ -20,19 +20,38 @@ const emphasisInk =
 const emphasisGreen =
   "font-display text-[clamp(1.375rem,2.5vw,1.75rem)] italic leading-[1.35] text-den-green-deep";
 
-const WORK_WITH = [
-  "Brands serving people with cognitive or physical disabilities",
-  "Healthcare systems and hospitals",
-  "Social workers and case managers",
-  "Therapists and behavioral health professionals",
-  "Occupational, physical, and speech therapists",
-  "Hospice and palliative care teams",
-  "Memory care and assisted living communities",
-  "Adult day programs",
-  "Nonprofits and aging-focused organizations",
-  "Caregiver advocacy groups",
-  "Employers supporting working caregivers",
-  "Community partners, sponsors, and funders",
+const WORK_WITH_GROUPS = [
+  {
+    label: "Care teams and clinicians",
+    items: [
+      "Therapists and behavioral health professionals",
+      "Occupational, physical, and speech therapists",
+      "Hospice and palliative care teams",
+      "Social workers and case managers",
+    ],
+  },
+  {
+    label: "Care settings",
+    items: [
+      "Memory care and assisted living communities",
+      "Adult day programs",
+    ],
+  },
+  {
+    label: "Community and mission",
+    items: [
+      "Nonprofits and aging-focused organizations",
+      "Caregiver advocacy groups",
+      "Community partners, sponsors, and funders",
+    ],
+  },
+  {
+    label: "Brands and employers",
+    items: [
+      "Brands serving people with cognitive or physical disabilities",
+      "Employers supporting working caregivers",
+    ],
+  },
 ];
 
 export default function Partners() {
@@ -162,9 +181,30 @@ export default function Partners() {
           If you serve caregivers in any capacity, there&rsquo;s likely a way we
           can work together.
         </p>
-        <div className="mt-8 grid max-w-[52rem] gap-x-12 gap-y-3 text-[1.1875rem] leading-[1.6] text-body-ink sm:grid-cols-2">
-          {WORK_WITH.map((item) => (
-            <p key={item}>{item}</p>
+        <div className="mt-8 max-w-[52rem]">
+          {WORK_WITH_GROUPS.map((group) => (
+            <div
+              key={group.label}
+              className="border-t border-body-ink/10 py-6 first:border-t-0 first:pt-2"
+            >
+              <p className="text-[0.8125rem] font-medium uppercase tracking-[0.08em] text-den-green">
+                {group.label}
+              </p>
+              <div className="mt-4 grid gap-x-12 gap-y-2 sm:grid-cols-2">
+                {group.items.map((item) => (
+                  <p
+                    key={item}
+                    className="flex items-start gap-2.5 text-[1.1875rem] leading-[1.45] text-body-ink"
+                  >
+                    <span
+                      aria-hidden="true"
+                      className="mt-[0.6em] h-1.5 w-1.5 flex-none rounded-full bg-den-green"
+                    />
+                    {item}
+                  </p>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </section>
