@@ -3,6 +3,7 @@ import { Fraunces, Hanken_Grotesk, Cormorant_Garamond, Lora, Newsreader } from "
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import ClarityAnalytics from "./clarity-analytics";
+import { OrgWebsiteSchema } from "./structured-data";
 import "./globals.css";
 
 // Display serif — old-style warmth that echoes the wordmark. Normal + italic
@@ -81,6 +82,7 @@ export default function RootLayout({
         {children}
         <Analytics />
         <SpeedInsights />
+        <OrgWebsiteSchema />
         <ClarityAnalytics />
       </body>
     </html>

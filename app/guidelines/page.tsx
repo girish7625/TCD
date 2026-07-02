@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import SiteHeader from "../site-header";
 import SiteFooter from "../site-footer";
+import { FaqSchema } from "../structured-data";
 
 export const metadata: Metadata = {
   title: "Community Guidelines · The Care Den",
@@ -63,6 +64,7 @@ const EXPECTATIONS = [
 export default function Guidelines() {
   return (
     <main className="settle flex min-h-screen flex-col py-12 sm:py-14 md:py-16">
+      <FaqSchema />
       <SiteHeader />
 
       <section className="mx-auto mt-12 w-full max-w-6xl px-6 sm:px-10 md:mt-16 md:px-16">
