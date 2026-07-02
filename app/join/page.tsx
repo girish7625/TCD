@@ -7,7 +7,7 @@ import Facilitators from "./facilitators";
 export const metadata: Metadata = {
   title: "Join The Care Den · A room for the long haul of caring",
   description:
-    "As low as $20 a month gets you into a peer community of mostly women caregivers. Five to six live sessions a week. Real people. Real support. Your pace.",
+    "As low as $27 a month gets you into a peer community of mostly women caregivers. Sessions almost every day, five to seven a week. Real people. Real support. Your pace.",
 };
 
 const ctaClass =
@@ -72,8 +72,7 @@ export default function Join() {
           <p className="mt-8 max-w-[48rem] text-[1.1875rem] leading-[1.6] text-body-ink">
             The Care Den is a private membership community for those caring for
             aging parents, partners, and loved ones with dementia, serious
-            illness or disability. Monthly membership starts at less than a
-            dollar a day. No annual contract. Leave anytime.
+            illness or disability. Monthly membership starts at $27 a month. No annual contract. Leave anytime.
           </p>
           <div className="mt-9">
             <a href="https://app.heartbeat.chat/thecareden/invitation?code=DEB656#landing-page" className={ctaClass}>

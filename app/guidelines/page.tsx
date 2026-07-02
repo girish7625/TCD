@@ -14,7 +14,7 @@ const linkClass =
 const FAQ = [
   {
     q: "What is The Care Den?",
-    a: "The Care Den is a peer-led, online membership community for caregivers of persons living with dementia, serious illness or disability. Members meet in facilitated virtual sessions hosted five to seven times a week and connect between sessions through our private community platform.",
+    a: "The Care Den is a peer-led, online membership community for caregivers of persons living with dementia, serious illness or disability. Members meet in facilitated virtual sessions hosted almost every day, five to seven times a week and connect between sessions through our private community platform.",
   },
   {
     q: "Who is The Care Den for?",

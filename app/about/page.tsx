@@ -126,9 +126,9 @@ export default function About() {
                 was cared for by her parents when she had cancer in her
                 thirties. Twenty years later, she returned home to care for them
                 as they navigated heart disease and dementia. A former
-                fundraiser and festival producer turned counselor, Lynn brings
+                fundraiser and festival producer turned therapist, Lynn brings
                 her graduate work and community building skills to The Care Den.
-                A budding clinician, she works with clients navigating
+                She is co-authoring a book on self-care for caregivers with Jacquelyn and works with clients navigating
                 transitions, grief and loss in North Carolina.
               </p>
             </div>
