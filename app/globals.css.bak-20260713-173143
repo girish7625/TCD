@@ -61,8 +61,3 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .settle { animation: none; }
 }
-
-/* Unifying grade for all real people photos (facilitators + About). Tune here to change every photo at once. Illustrations excluded. */
-.photo-grade {
-  filter: brightness(1.03) contrast(0.95) saturate(0.92) sepia(0.10);
-}

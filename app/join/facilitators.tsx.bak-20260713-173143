@@ -46,12 +46,12 @@ const FACILITATORS: Facilitator[] = [
     photo: "/illustrations/jacquelyn-portrait.jpg",
     instagram: "https://www.instagram.com/momofmymom/",
   },
+  // Alma's Instagram handle still TBD; bio and photo confirmed.
   {
     name: "Alma Valencia",
     title: "Peer facilitator",
     bio: "Caring for her mom with FTD for 11 years, Alma knows that caregiving takes a village. That's why she shares her wisdom so generously and pays it forward by shining a light on the resources that have helped her and her family.",
     photo: "/illustrations/alma.jpg",
-    instagram: "https://www.instagram.com/mom_has_dementia",
   },
 ];
 
@@ -112,7 +112,7 @@ export default function Facilitators() {
                   <img
                     src={f.photo}
                     alt={f.name}
-                    className="h-full w-full object-cover photo-grade"
+                    className="h-full w-full object-cover"
                   />
                 ) : (
                   <div className="flex h-full w-full items-center justify-center text-2xl font-semibold text-den-green-deep">

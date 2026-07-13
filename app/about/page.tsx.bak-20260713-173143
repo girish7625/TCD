@@ -69,7 +69,7 @@ export default function About() {
         </h2>
         <div className="mt-8 flex max-w-[48rem] flex-col gap-6 text-[1.1875rem] leading-[1.6] text-body-ink">
           <p>
-            More than 63 million Americans are caregivers. Most of them are
+            More than 64 million Americans are caregivers. Most of them are
             women. Many of them are caring for someone they love with dementia,
             chronic illness or severe disability.
           </p>
@@ -99,7 +99,7 @@ export default function About() {
                 alt="Jacquelyn Revere with her mother"
                 width={320}
                 height={400}
-                className="aspect-[4/5] w-full max-w-[320px] rounded-2xl object-cover photo-grade"
+                className="aspect-[4/5] w-full max-w-[320px] rounded-2xl object-cover"
               />
               <p className="mt-7 text-[1.1875rem] leading-[1.6] text-body-ink">
                 <strong className="font-semibold">Jacquelyn Revere</strong>{" "}
@@ -119,7 +119,7 @@ export default function About() {
                 alt="Lynn McGuire-Raj with her father"
                 width={320}
                 height={400}
-                className="aspect-[4/5] w-full max-w-[320px] rounded-2xl object-cover photo-grade"
+                className="aspect-[4/5] w-full max-w-[320px] rounded-2xl object-cover"
               />
               <p className="mt-7 text-[1.1875rem] leading-[1.6] text-body-ink">
                 <strong className="font-semibold">

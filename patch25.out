@@ -1,0 +1,6 @@
+OK  app/about/page.tsx   backup: page.tsx.bak-20260713-173143
+OK  app/join/facilitators.tsx   backup: facilitators.tsx.bak-20260713-173143
+OK  app/globals.css   backup: globals.css.bak-20260713-173143
+Applied cleanly. 64->63: applied | about photos grade: applied (2) | alma IG: applied | join photos grade: applied | grade CSS: applied
+3 file(s) changed.
+Reminder: also drop the clean jacquelyn.jpg into public/illustrations/.
